@@ -14,7 +14,7 @@ Usage
     python experiments/run_main_experiment.py --env tictactoe --seeds 5
     python experiments/run_main_experiment.py --all --seeds 10 --output results/
 
-Results are saved as JSON and can be used to generate paper figures.
+Results are saved as JSON and can be used to generate figures.
 """
 
 from __future__ import annotations
