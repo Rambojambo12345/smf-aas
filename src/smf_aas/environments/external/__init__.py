@@ -7,8 +7,6 @@ to demonstrate framework generalization beyond internal implementations.
 Requirements:
     pip install pettingzoo gymnasium
 
-Note: These are OPTIONAL and only used for external validation.
-The primary experimental results use internal implementations.
 """
 
 import warnings
