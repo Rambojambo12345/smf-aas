@@ -118,6 +118,10 @@ def run_episode(env, agent, opponent) -> tuple:
 
 def train_agent(env, opponent, n_episodes: int, seed: int) -> TabularQLearning:
     """Train Q-learning agent against opponent."""
+    # Configure single-player environments before training
+    if env.num_players == 1 and hasattr(opponent, 'configure'):
+        opponent.configure()
+    
     agent = TabularQLearning(
         n_actions=env.num_actions,
         learning_rate=0.1,
@@ -181,6 +185,10 @@ def run_single_experiment(config: ExperimentConfig) -> ExperimentResult:
         # Switch opponent at change_point
         opp_idx = 0 if ep < config.change_point else 1
         opp = opp_list[opp_idx]
+        
+        # Configure single-player environments before each episode
+        if env.num_players == 1 and hasattr(opp, 'configure'):
+            opp.configure()
         
         # Run episode
         agent.reset()
