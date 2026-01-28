@@ -1,0 +1,6 @@
+# Core dependencies (required)
+numpy>=1.20.0,<2.0.0
+scipy>=1.7.0,<2.0.0
+
+# Experiments (optional)
+# pip install -r requirements-experiments.txt

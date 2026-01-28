@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "SMF-AAS: Strategy Monitoring Framework for Adaptive AI Systems"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Kleibrink"
+    given-names: "B."
+repository-code: "https://github.com/username/smf-aas"
+license: MIT
+version: 1.0.0
+date-released: 2026-01-01
+keywords:
+  - machine-learning
+  - reinforcement-learning
+  - monitoring
+  - drift-detection
+  - ai-safety
+  - eu-ai-act
+abstract: >-
+  A domain-agnostic framework for post-deployment monitoring of AI systems
+  that can modify their strategies, designed for EU AI Act Article 72 compliance.
+  Combines state distribution shift, behavioral change, and performance deviation
+  into a Composite Drift Score (CDS) for interpretable governance triggers.
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Kleibrink"
+      given-names: "B."
+  title: "SMF-AAS: A Multi-Component Framework for Post-Deployment Monitoring of Adaptive AI Systems"
+  journal: "Expert Systems with Applications"
+  year: 2026
+  publisher:
+    name: "Elsevier"
