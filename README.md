@@ -219,31 +219,6 @@ python experiments/run_main_experiment.py --external-only --seeds 10
 
 ---
 
-## Generating Figures
-
-### Generate All Paper Figures
-
-```bash
-# First, run experiments to generate results
-python experiments/run_main_experiment.py --internal-only --seeds 5
-
-# Then generate figures from results
-python experiments/generate_paper_figures.py --results results/experiment_results.json --output results/figures
-```
-
-### Generate Time-Series Visualizations
-
-```bash
-python experiments/generate_timeseries_figures.py
-```
-
-This generates:
-- `timeseries_*.pdf/png` - CDS evolution over time for each environment
-- `components_*.pdf/png` - Individual S, B, P component scores
-- `timeseries_all_envs.pdf/png` - Combined view of all environments
-
----
-
 ## Framework Overview
 
 ### Architecture
@@ -296,38 +271,6 @@ Where z_S, z_B, z_P are z-scores relative to baseline statistics.
 | GREEN | CDS < 2.0 | Normal operation |
 | YELLOW | 2.0 ≤ CDS < 3.0 | Possible drift detected |
 | RED | CDS ≥ 3.0 | Significant drift detected |
-
----
-
-## Results
-
-### Primary Results (Internal Environments)
-
-| Environment | Detection Rate | Delay (episodes) | False Positives |
-|-------------|----------------|------------------|-----------------|
-| TicTacToe | 100% | 49.0 ± 0.0 | 1.6 |
-| ConnectFour | 100% | 49.0 ± 0.0 | 1.0 |
-| KuhnPoker | 100% | 49.0 ± 0.0 | 1.2 |
-| Maze | 80% | 74.0 ± 25.0 | 0.8 |
-| **Overall** | **95%** | **55.3** | **1.15** |
-
-### External Validation (PettingZoo)
-
-| Environment | Detection Rate | Delay (episodes) | False Positives |
-|-------------|----------------|------------------|-----------------|
-| TicTacToe-PZ | 100% | 49.0 ± 0.0 | 1.6 |
-| ConnectFour-PZ | 100% | 49.0 ± 0.0 | 1.0 |
-
-### Comparison with Baselines
-
-| Method | Detection Rate | Mean Delay | Mean FP |
-|--------|----------------|------------|---------|
-| **SMF-AAS (Ours)** | **95%** | 55.3 | 1.15 |
-| CUSUM | 75% | 47.8 | 1.0 |
-| ADWIN | 65% | 45.2 | 0.5 |
-| Perf-Only | 70% | 20.4 | 6.2 |
-
-**Key Finding:** SMF-AAS is the only method that detects changes in the Maze environment (single-player goal relocation), where all baselines fail (0% detection).
 
 ---
 
@@ -418,7 +361,7 @@ random_agent = RandomAgent(n_actions=9, seed=42)
 ### Baselines
 
 ```python
-from smf_aas.baselines import CUSUM, ADWIN, PageHinkley, PerformanceOnly
+from smf_aas.baselines import CUSUM, ADWIN, PerformanceOnly
 
 # CUSUM detector
 cusum = CUSUM(threshold=5.0, drift=0.05)
