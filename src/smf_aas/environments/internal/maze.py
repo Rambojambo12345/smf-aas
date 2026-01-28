@@ -33,9 +33,6 @@ class MazeEnv(GameEnvironment):
     goal position. The observation includes the current position
     and goal position (normalized to [0, 1]).
     
-    For monitoring experiments, different "opponents" are actually
-    different goal configurations that test policy adaptation.
-    
     Parameters
     ----------
     size : int, default=5
@@ -46,23 +43,6 @@ class MazeEnv(GameEnvironment):
         Initial goal position: 'bottom_right', 'top_right', 'bottom_left'.
     seed : int, optional
         Random seed.
-    
-    Attributes
-    ----------
-    pos : List[int]
-        Current [x, y] position.
-    goal : List[int]
-        Goal [x, y] position.
-    steps : int
-        Steps taken in current episode.
-    
-    Examples
-    --------
-    >>> env = MazeEnv(size=5)
-    >>> state = env.reset()
-    >>> state.observation
-    array([0. , 0. , 0.8, 0.8], dtype=float32)
-    >>> state, done = env.step(1)  # Move down (positive y)
     """
     
     # Actions: 0=up, 1=down, 2=left, 3=right
@@ -75,10 +55,10 @@ class MazeEnv(GameEnvironment):
     
     # Goal presets (as fractions of grid size)
     _GOAL_PRESETS = {
-        'bottom_right': (1.0, 1.0),   # Default: opposite corner
-        'top_right': (1.0, 0.0),      # Top-right corner
-        'bottom_left': (0.0, 1.0),    # Bottom-left corner
-        'center': (0.5, 0.5),         # Center of grid
+        'bottom_right': (1.0, 1.0),
+        'top_right': (1.0, 0.0),
+        'bottom_left': (0.0, 1.0),
+        'center': (0.5, 0.5),
     }
     
     def __init__(
@@ -111,7 +91,6 @@ class MazeEnv(GameEnvironment):
         gx = int(fx * (self._size - 1))
         gy = int(fy * (self._size - 1))
         
-        # Ensure goal is not at start
         if gx == 0 and gy == 0:
             gx = self._size - 1
             gy = self._size - 1
@@ -119,15 +98,7 @@ class MazeEnv(GameEnvironment):
         return [gx, gy]
     
     def set_goal_position(self, position: str) -> None:
-        """Change the goal position.
-        
-        This is used to induce strategy changes in monitoring experiments.
-        
-        Parameters
-        ----------
-        position : str
-            New goal position preset.
-        """
+        """Change the goal position."""
         self._goal_position = position
         self._goal = self._compute_goal(position)
     
@@ -145,7 +116,7 @@ class MazeEnv(GameEnvironment):
     
     @property
     def state_shape(self) -> Tuple[int, ...]:
-        return (4,)  # [pos_x, pos_y, goal_x, goal_y] normalized
+        return (4,)
     
     def reset(self) -> GameState:
         """Reset to start position."""
@@ -164,13 +135,11 @@ class MazeEnv(GameEnvironment):
         
         self._steps += 1
         
-        # Apply movement
         dx, dy = self._ACTIONS[action]
         new_x = max(0, min(self._size - 1, self._pos[0] + dx))
         new_y = max(0, min(self._size - 1, self._pos[1] + dy))
         self._pos = [new_x, new_y]
         
-        # Check terminal conditions
         reached_goal = self._pos == self._goal
         timeout = self._steps >= self._max_steps
         
@@ -206,17 +175,7 @@ class MazeEnv(GameEnvironment):
         )
     
     def get_opponents(self, seed: int = 42) -> Dict[str, Any]:
-        """Get goal configurations for single-player environment.
-        
-        For maze, "opponents" are different goal positions that require
-        the agent to adapt its policy. This creates meaningful strategy
-        changes in single-player settings.
-        
-        Returns
-        -------
-        Dict[str, Any]
-            Mapping of configuration names to _GoalConfig objects.
-        """
+        """Get goal configurations for single-player environment."""
         return {
             'goal_bottom_right': _GoalConfig(self, 'bottom_right'),
             'goal_top_right': _GoalConfig(self, 'top_right'),
@@ -224,29 +183,16 @@ class MazeEnv(GameEnvironment):
 
 
 class _GoalConfig:
-    """Wrapper that sets goal position when get_action is called.
-    
-    This allows the maze to be used with the same experiment interface
-    as adversarial games, where "opponent" changes trigger env changes.
-    """
+    """Wrapper that sets goal position when activated."""
     
     def __init__(self, env: MazeEnv, goal_position: str) -> None:
         self._env = env
         self._goal_position = goal_position
-        self._configured = False
+    
+    def configure(self) -> None:
+        """Configure the environment with this goal position."""
+        self._env.set_goal_position(self._goal_position)
     
     def get_action(self, observation: np.ndarray, legal_actions: List[int]) -> int:
-        """Configure goal and return agent's best action.
-        
-        Note: For single-player, this just ensures goal is set correctly.
-        The actual action is taken by the learning agent, not this "opponent".
-        """
-        if not self._configured:
-            self._env.set_goal_position(self._goal_position)
-            self._configured = True
-        # Return any legal action (won't be used for single-player)
+        """Return dummy action (not used for single-player)."""
         return legal_actions[0] if legal_actions else 0
-    
-    def reset(self) -> None:
-        """Reset configuration state for new episode."""
-        self._configured = False

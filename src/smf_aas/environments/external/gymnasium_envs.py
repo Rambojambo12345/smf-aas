@@ -16,7 +16,7 @@ from ..base import GameEnvironment, GameState
 
 
 def _check_gymnasium():
-    """Check if Gymnasium is available (lazy import)."""
+    """Check if Gymnasium is available."""
     try:
         import gymnasium as gym
         return True, gym
@@ -25,23 +25,26 @@ def _check_gymnasium():
 
 
 class GymnasiumCartPole(GameEnvironment):
-    """Gymnasium CartPole wrapper for single-player validation.
+    """Gymnasium CartPole wrapper with configurable wind for dynamics change experiments.
     
     CartPole-v1 is a classic control task where the agent must balance
     a pole on a cart by applying left/right forces.
+    
+    For monitoring experiments, strategy changes are induced by adding
+    wind (a constant force bias) that pushes the cart in one direction.
     
     Parameters
     ----------
     seed : int, optional
         Random seed.
-    max_steps : int, default=1500
+    max_steps : int, default=500
         Maximum steps per episode.
     """
     
     def __init__(
         self,
         seed: Optional[int] = None,
-        max_steps: int = 1500
+        max_steps: int = 500
     ) -> None:
         available, gym = _check_gymnasium()
         if not available:
@@ -54,6 +57,23 @@ class GymnasiumCartPole(GameEnvironment):
         self._env = gym.make('CartPole-v1')
         self._steps = 0
         self._obs: Optional[np.ndarray] = None
+        self._wind_force: float = 0.0
+    
+    @property
+    def wind_force(self) -> float:
+        """Current wind force."""
+        return self._wind_force
+    
+    def set_wind(self, force: float) -> None:
+        """Set wind force for dynamics change experiments.
+        
+        Parameters
+        ----------
+        force : float
+            Wind force to apply. Positive pushes cart right.
+            Typical values: 0.02 to 0.05 for noticeable but manageable wind.
+        """
+        self._wind_force = force
     
     @property
     def name(self) -> str:
@@ -61,7 +81,7 @@ class GymnasiumCartPole(GameEnvironment):
     
     @property
     def num_actions(self) -> int:
-        return 2  # left, right
+        return 2
     
     @property
     def num_players(self) -> int:
@@ -69,7 +89,7 @@ class GymnasiumCartPole(GameEnvironment):
     
     @property
     def state_shape(self) -> Tuple[int, ...]:
-        return (4,)  # cart_pos, cart_vel, pole_angle, pole_vel
+        return (4,)
     
     def reset(self) -> GameState:
         self._obs, _ = self._env.reset(seed=self._seed)
@@ -87,6 +107,11 @@ class GymnasiumCartPole(GameEnvironment):
         self._obs, reward, terminated, truncated, _ = self._env.step(action)
         self._steps += 1
         
+        # Apply wind: modify cart velocity (index 1 in observation)
+        if self._wind_force != 0.0:
+            self._obs = np.array(self._obs)
+            self._obs[1] += self._wind_force
+        
         done = terminated or truncated or self._steps >= self._max_steps
         
         return GameState(
@@ -98,29 +123,24 @@ class GymnasiumCartPole(GameEnvironment):
         ), done
     
     def get_opponents(self, seed: int = 42) -> Dict[str, Any]:
-        """For single-player, return different exploration policies."""
+        """Get wind configurations for single-player environment."""
         return {
-            'random': _RandomPolicy(seed),
-            'biased_left': _BiasedPolicy(seed, bias_action=0),
-            'biased_right': _BiasedPolicy(seed, bias_action=1),
+            'no_wind': _WindConfig(self, wind_force=0.0),
+            'wind_right': _WindConfig(self, wind_force=0.03),
         }
 
 
-class _RandomPolicy:
-    def __init__(self, seed: int) -> None:
-        self._rng = np.random.RandomState(seed)
+class _WindConfig:
+    """Wrapper that sets wind force when activated."""
+    
+    def __init__(self, env: GymnasiumCartPole, wind_force: float) -> None:
+        self._env = env
+        self._wind_force = wind_force
+    
+    def configure(self) -> None:
+        """Configure the environment with this wind setting."""
+        self._env.set_wind(self._wind_force)
     
     def get_action(self, observation: np.ndarray, legal_actions: List[int]) -> int:
-        return int(self._rng.choice(legal_actions))
-
-
-class _BiasedPolicy:
-    def __init__(self, seed: int, bias_action: int, bias_prob: float = 0.7) -> None:
-        self._rng = np.random.RandomState(seed)
-        self._bias_action = bias_action
-        self._bias_prob = bias_prob
-    
-    def get_action(self, observation: np.ndarray, legal_actions: List[int]) -> int:
-        if self._rng.random() < self._bias_prob and self._bias_action in legal_actions:
-            return self._bias_action
-        return int(self._rng.choice(legal_actions))
+        """Return dummy action (not used for single-player)."""
+        return legal_actions[0] if legal_actions else 0
