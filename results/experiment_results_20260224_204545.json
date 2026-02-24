@@ -1,0 +1,1141 @@
+{
+  "cartpole-gym": {
+    "env_name": "cartpole-gym",
+    "n_seeds": 20,
+    "seeds": [
+      42,
+      1042,
+      2042,
+      3042,
+      4042,
+      5042,
+      6042,
+      7042,
+      8042,
+      9042,
+      10042,
+      11042,
+      12042,
+      13042,
+      14042,
+      15042,
+      16042,
+      17042,
+      18042,
+      19042
+    ],
+    "config": {
+      "n_episodes": 1500,
+      "change_point": 900,
+      "baseline_episodes": 200,
+      "window_size": 50,
+      "training_episodes": 1000,
+      "cusum_threshold": 5.0,
+      "cusum_drift": 0.5
+    },
+    "individual_results": [
+      {
+        "env_name": "cartpole-gym",
+        "seed": 42,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 42,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 149,
+        "false_positives": 2,
+        "true_positives": 3,
+        "total_alerts": 5,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.011016625443028262,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1396600827508363,
+            "std": 0.16372523912317105
+          },
+          "P": {
+            "mean": -0.10255691536438712,
+            "std": 0.11525142660093922
+          }
+        },
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.5,
+        "cusum_detected": true,
+        "cusum_delay": 219,
+        "cusum_fp": 1,
+        "cusum_tp": 1,
+        "adwin_detected": true,
+        "adwin_delay": 4,
+        "adwin_fp": 134,
+        "adwin_tp": 112,
+        "perf_only_detected": true,
+        "perf_only_delay": 141,
+        "perf_only_fp": 4,
+        "perf_only_tp": 5
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 1042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 99,
+        "false_positives": 10,
+        "true_positives": 10,
+        "total_alerts": 20,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.010775413077042108,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.2383060216036227,
+            "std": 0.05064278692704761
+          },
+          "P": {
+            "mean": -0.09706553467343186,
+            "std": 0.14782618073083714
+          }
+        },
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1_score": 0.16666666666666669,
+        "cusum_detected": true,
+        "cusum_delay": 199,
+        "cusum_fp": 4,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 0,
+        "adwin_fp": 132,
+        "adwin_tp": 113,
+        "perf_only_detected": true,
+        "perf_only_delay": 339,
+        "perf_only_fp": 37,
+        "perf_only_tp": 18
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 2042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": false,
+        "detection_delay": null,
+        "false_positives": 2,
+        "true_positives": 0,
+        "total_alerts": 2,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.011259862285246591,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.46883603459733175,
+            "std": 0.16340304900011046
+          },
+          "P": {
+            "mean": -0.10844673916949643,
+            "std": 0.2790140834898026
+          }
+        },
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": null,
+        "cusum_detected": true,
+        "cusum_delay": 581,
+        "cusum_fp": 3,
+        "cusum_tp": 1,
+        "adwin_detected": true,
+        "adwin_delay": 1,
+        "adwin_fp": 132,
+        "adwin_tp": 116,
+        "perf_only_detected": true,
+        "perf_only_delay": 49,
+        "perf_only_fp": 56,
+        "perf_only_tp": 68
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 3042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 1,
+        "true_positives": 1,
+        "total_alerts": 2,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.012805109919205467,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.3408002215101741,
+            "std": 0.09475155736657889
+          },
+          "P": {
+            "mean": -0.07864734159048546,
+            "std": 0.1774523044452892
+          }
+        },
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "cusum_detected": true,
+        "cusum_delay": 295,
+        "cusum_fp": 1,
+        "cusum_tp": 1,
+        "adwin_detected": true,
+        "adwin_delay": 1,
+        "adwin_fp": 134,
+        "adwin_tp": 113,
+        "perf_only_detected": true,
+        "perf_only_delay": 153,
+        "perf_only_fp": 7,
+        "perf_only_tp": 3
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 4042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 12,
+        "total_alerts": 26,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.012693206790236819,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.7830473218441194,
+            "std": 0.014878076807483744
+          },
+          "P": {
+            "mean": -0.3132566060096148,
+            "std": 0.29137806165154323
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 23,
+        "cusum_fp": 5,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 2,
+        "adwin_fp": 135,
+        "adwin_tp": 116,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 0,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 5042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 4,
+        "true_positives": 9,
+        "total_alerts": 13,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.010558578851638368,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.11528493495189192,
+            "std": 0.07175040199699008
+          },
+          "P": {
+            "mean": 0.03786176828543288,
+            "std": 0.2647401553587769
+          }
+        },
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1_score": 0.33333333333333337,
+        "cusum_detected": true,
+        "cusum_delay": 120,
+        "cusum_fp": 8,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 2,
+        "adwin_fp": 134,
+        "adwin_tp": 115,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 0,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 6042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 99,
+        "false_positives": 3,
+        "true_positives": 8,
+        "total_alerts": 11,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.01599852173220803,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.15106571681429784,
+            "std": 0.0909252705168152
+          },
+          "P": {
+            "mean": -0.01424682741305732,
+            "std": 0.08627407721895457
+          }
+        },
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "cusum_detected": true,
+        "cusum_delay": 213,
+        "cusum_fp": 6,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 1,
+        "adwin_fp": 134,
+        "adwin_tp": 113,
+        "perf_only_detected": true,
+        "perf_only_delay": 14,
+        "perf_only_fp": 247,
+        "perf_only_tp": 264
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 7042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 8,
+        "true_positives": 10,
+        "total_alerts": 18,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.011811774495538352,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.5130685804732238,
+            "std": 0.06858347351478833
+          },
+          "P": {
+            "mean": -0.08159210034381298,
+            "std": 0.07672198162139451
+          }
+        },
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1_score": 0.19999999999999998,
+        "cusum_detected": true,
+        "cusum_delay": 74,
+        "cusum_fp": 5,
+        "cusum_tp": 3,
+        "adwin_detected": true,
+        "adwin_delay": 3,
+        "adwin_fp": 132,
+        "adwin_tp": 116,
+        "perf_only_detected": true,
+        "perf_only_delay": 3,
+        "perf_only_fp": 98,
+        "perf_only_tp": 119
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 8042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 3,
+        "true_positives": 4,
+        "total_alerts": 7,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00862131571169322,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.2872661074238418,
+            "std": 0.13891735197986144
+          },
+          "P": {
+            "mean": -0.10929685101625373,
+            "std": 0.08373397111775005
+          }
+        },
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "cusum_detected": true,
+        "cusum_delay": 77,
+        "cusum_fp": 0,
+        "cusum_tp": 1,
+        "adwin_detected": true,
+        "adwin_delay": 2,
+        "adwin_fp": 133,
+        "adwin_tp": 113,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 0,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 9042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 2,
+        "true_positives": 2,
+        "total_alerts": 4,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.011769116877155447,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.29959179628534816,
+            "std": 0.09583636349863585
+          },
+          "P": {
+            "mean": -0.012625249854272338,
+            "std": 0.10523237108246669
+          }
+        },
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.5,
+        "cusum_detected": true,
+        "cusum_delay": 54,
+        "cusum_fp": 7,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 4,
+        "adwin_fp": 136,
+        "adwin_tp": 114,
+        "perf_only_detected": true,
+        "perf_only_delay": 4,
+        "perf_only_fp": 80,
+        "perf_only_tp": 72
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 10042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 10042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 9,
+        "true_positives": 7,
+        "total_alerts": 16,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.010813749172890373,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.29728962866781616,
+            "std": 0.12450016090266744
+          },
+          "P": {
+            "mean": 0.10344024530033415,
+            "std": 0.03725414904822295
+          }
+        },
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1_score": 0.18181818181818182,
+        "cusum_detected": true,
+        "cusum_delay": 13,
+        "cusum_fp": 5,
+        "cusum_tp": 7,
+        "adwin_detected": true,
+        "adwin_delay": 2,
+        "adwin_fp": 134,
+        "adwin_tp": 114,
+        "perf_only_detected": true,
+        "perf_only_delay": 121,
+        "perf_only_fp": 0,
+        "perf_only_tp": 23
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 11042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 11042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 8,
+        "true_positives": 9,
+        "total_alerts": 17,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.02624902061707716,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.5680114486428604,
+            "std": 0.05020113833203758
+          },
+          "P": {
+            "mean": 0.04129600439518984,
+            "std": 0.27546189045213976
+          }
+        },
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1_score": 0.19999999999999998,
+        "cusum_detected": true,
+        "cusum_delay": 38,
+        "cusum_fp": 9,
+        "cusum_tp": 9,
+        "adwin_detected": true,
+        "adwin_delay": 3,
+        "adwin_fp": 135,
+        "adwin_tp": 117,
+        "perf_only_detected": true,
+        "perf_only_delay": 261,
+        "perf_only_fp": 9,
+        "perf_only_tp": 1
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 12042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 12042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 11,
+        "true_positives": 10,
+        "total_alerts": 21,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.013308689495586907,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.7424481093237583,
+            "std": 0.06872785764202996
+          },
+          "P": {
+            "mean": 0.24348539333217664,
+            "std": 0.24647742469803546
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 20,
+        "cusum_fp": 17,
+        "cusum_tp": 16,
+        "adwin_detected": true,
+        "adwin_delay": 4,
+        "adwin_fp": 134,
+        "adwin_tp": 113,
+        "perf_only_detected": true,
+        "perf_only_delay": 42,
+        "perf_only_fp": 11,
+        "perf_only_tp": 11
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 13042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 13042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 149,
+        "false_positives": 1,
+        "true_positives": 2,
+        "total_alerts": 3,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.007371874824064825,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.31009304421529593,
+            "std": 0.1152683123885138
+          },
+          "P": {
+            "mean": -0.03688648031268213,
+            "std": 0.44355194299505396
+          }
+        },
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "cusum_detected": true,
+        "cusum_delay": 119,
+        "cusum_fp": 1,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 0,
+        "adwin_fp": 135,
+        "adwin_tp": 117,
+        "perf_only_detected": true,
+        "perf_only_delay": 128,
+        "perf_only_fp": 12,
+        "perf_only_tp": 72
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 14042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 14042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 149,
+        "false_positives": 5,
+        "true_positives": 6,
+        "total_alerts": 11,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.01017216031154839,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.3136651202076989,
+            "std": 0.14544261381873813
+          },
+          "P": {
+            "mean": -0.20183648642807353,
+            "std": 0.11041442498014252
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": true,
+        "cusum_delay": 201,
+        "cusum_fp": 3,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 5,
+        "adwin_fp": 133,
+        "adwin_tp": 117,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 44,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 15042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 15042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 8,
+        "true_positives": 10,
+        "total_alerts": 18,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.01891773463748806,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.5869807087246641,
+            "std": 0.06490793493721508
+          },
+          "P": {
+            "mean": 0.10330729292898692,
+            "std": 0.2727386570083547
+          }
+        },
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1_score": 0.19999999999999998,
+        "cusum_detected": false,
+        "cusum_delay": null,
+        "cusum_fp": 0,
+        "cusum_tp": 0,
+        "adwin_detected": true,
+        "adwin_delay": 3,
+        "adwin_fp": 133,
+        "adwin_tp": 115,
+        "perf_only_detected": true,
+        "perf_only_delay": 331,
+        "perf_only_fp": 65,
+        "perf_only_tp": 1
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 16042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 16042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 11,
+        "total_alerts": 25,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.01646890643802641,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.21473137102571294,
+            "std": 0.11245654743927064
+          },
+          "P": {
+            "mean": -0.0090269392793219,
+            "std": 0.010523433769533679
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 116,
+        "cusum_fp": 4,
+        "cusum_tp": 3,
+        "adwin_detected": true,
+        "adwin_delay": 2,
+        "adwin_fp": 132,
+        "adwin_tp": 116,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 208,
+        "perf_only_tp": 119
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 17042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 17042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 3,
+        "true_positives": 6,
+        "total_alerts": 9,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.01143237829595289,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.10023100626194219,
+            "std": 0.09719127289118548
+          },
+          "P": {
+            "mean": -0.042828444838313676,
+            "std": 0.0893271517198059
+          }
+        },
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "cusum_detected": true,
+        "cusum_delay": 14,
+        "cusum_fp": 9,
+        "cusum_tp": 6,
+        "adwin_detected": true,
+        "adwin_delay": 3,
+        "adwin_fp": 133,
+        "adwin_tp": 115,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 196,
+        "perf_only_tp": 287
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 18042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 18042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 1,
+        "true_positives": 2,
+        "total_alerts": 3,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.010622146015233928,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.19275230269721472,
+            "std": 0.15935471637805304
+          },
+          "P": {
+            "mean": -0.10939873923152843,
+            "std": 0.22945393581019768
+          }
+        },
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "cusum_detected": true,
+        "cusum_delay": 2,
+        "cusum_fp": 1,
+        "cusum_tp": 1,
+        "adwin_detected": true,
+        "adwin_delay": 3,
+        "adwin_fp": 136,
+        "adwin_tp": 116,
+        "perf_only_detected": true,
+        "perf_only_delay": 130,
+        "perf_only_fp": 31,
+        "perf_only_tp": 4
+      },
+      {
+        "env_name": "cartpole-gym",
+        "seed": 19042,
+        "config": {
+          "env_name": "cartpole-gym",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 19042,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 299,
+        "false_positives": 5,
+        "true_positives": 4,
+        "total_alerts": 9,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.009737089799850551,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.41109754764617307,
+            "std": 0.1276028295508905
+          },
+          "P": {
+            "mean": 0.1541293703029538,
+            "std": 0.11366579690584787
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": false,
+        "cusum_delay": null,
+        "cusum_fp": 9,
+        "cusum_tp": 0,
+        "adwin_detected": true,
+        "adwin_delay": 4,
+        "adwin_fp": 133,
+        "adwin_tp": 111,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 0,
+        "perf_only_tp": 0
+      }
+    ],
+    "summary": {
+      "smf_aas": {
+        "detection_rate": 0.95,
+        "mean_delay": 83.21052631578948,
+        "std_delay": 62.93821443737578,
+        "mean_fp": 5.7,
+        "std_fp": 4.148493702538308,
+        "precision": 0.14285714285714285,
+        "recall": 0.95,
+        "f1_score": 0.24836601307189543
+      },
+      "cusum": {
+        "detection_rate": 0.9,
+        "mean_delay": 132.11111111111111,
+        "std_delay": 138.00921422092276,
+        "mean_fp": 4.9,
+        "std_fp": 4.060788100849391,
+        "precision": 0.15517241379310345,
+        "recall": 0.9,
+        "f1_score": 0.2647058823529411
+      },
+      "adwin": {
+        "detection_rate": 1.0,
+        "mean_delay": 2.45,
+        "std_delay": 1.359227721906819,
+        "mean_fp": 133.7,
+        "std_fp": 1.2288205727444508,
+        "precision": 0.007423904974016332,
+        "recall": 1.0,
+        "f1_score": 0.014738393515106852
+      },
+      "perf_only": {
+        "detection_rate": 0.75,
+        "mean_delay": 114.4,
+        "std_delay": 113.10573224495153,
+        "mean_fp": 55.25,
+        "std_fp": 74.05394992841367,
+        "precision": 0.013392857142857142,
+        "recall": 0.75,
+        "f1_score": 0.02631578947368421
+      }
+    }
+  }
+}
