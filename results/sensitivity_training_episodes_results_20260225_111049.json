@@ -1,0 +1,3009 @@
+{
+  "parameter": "training_episodes",
+  "values_tested": [
+    500,
+    750,
+    1000,
+    1500,
+    2000
+  ],
+  "env_name": "connectfour-pz",
+  "n_seeds": 10,
+  "results": {
+    "500": {
+      "env_name": "connectfour-pz",
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        1042,
+        2042,
+        3042,
+        4042,
+        5042,
+        6042,
+        7042,
+        8042,
+        9042
+      ],
+      "config": {
+        "n_episodes": 1500,
+        "change_point": 900,
+        "baseline_episodes": 200,
+        "window_size": 50,
+        "training_episodes": 500,
+        "cusum_threshold": 5.0,
+        "cusum_drift": 0.5
+      },
+      "individual_results": [
+        {
+          "env_name": "connectfour-pz",
+          "seed": 42,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 42,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 5,
+          "true_positives": 9,
+          "total_alerts": 14,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.000888558006133608,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.12456827281742182,
+              "std": 0.03499875036986583
+            },
+            "P": {
+              "mean": -0.16556747087694312,
+              "std": 0.42822024424272764
+            }
+          },
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "f1_score": 0.2857142857142857,
+          "cusum_detected": true,
+          "cusum_delay": 9,
+          "cusum_fp": 10,
+          "cusum_tp": 55,
+          "adwin_detected": true,
+          "adwin_delay": 53,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": false,
+          "perf_only_delay": null,
+          "perf_only_fp": 0,
+          "perf_only_tp": 0
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 1042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 1042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 13,
+          "true_positives": 11,
+          "total_alerts": 24,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0004751213983472981,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.19776277776271148,
+              "std": 0.023028839726263642
+            },
+            "P": {
+              "mean": -0.05972637303566956,
+              "std": 0.01
+            }
+          },
+          "precision": 0.07142857142857142,
+          "recall": 1.0,
+          "f1_score": 0.13333333333333333,
+          "cusum_detected": true,
+          "cusum_delay": 16,
+          "cusum_fp": 1,
+          "cusum_tp": 23,
+          "adwin_detected": true,
+          "adwin_delay": 25,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 36,
+          "perf_only_fp": 55,
+          "perf_only_tp": 87
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 2042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 2042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 4,
+          "true_positives": 5,
+          "total_alerts": 9,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0007982788708701901,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.11298377619035978,
+              "std": 0.06399000788674675
+            },
+            "P": {
+              "mean": 0.039677414088559494,
+              "std": 0.179856084146916
+            }
+          },
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1_score": 0.33333333333333337,
+          "cusum_detected": true,
+          "cusum_delay": 7,
+          "cusum_fp": 0,
+          "cusum_tp": 22,
+          "adwin_detected": true,
+          "adwin_delay": 13,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 0,
+          "perf_only_fp": 60,
+          "perf_only_tp": 75
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 3042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 3042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 4,
+          "true_positives": 9,
+          "total_alerts": 13,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0010608210214468653,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.13241708209879557,
+              "std": 0.03796654827588534
+            },
+            "P": {
+              "mean": 0.08089647953197826,
+              "std": 0.122790440405148
+            }
+          },
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1_score": 0.33333333333333337,
+          "cusum_detected": true,
+          "cusum_delay": 14,
+          "cusum_fp": 0,
+          "cusum_tp": 31,
+          "adwin_detected": true,
+          "adwin_delay": 19,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 15,
+          "perf_only_fp": 21,
+          "perf_only_tp": 46
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 4042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 4042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 11,
+          "total_alerts": 25,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0005911573319475448,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.13760820394935305,
+              "std": 0.01
+            },
+            "P": {
+              "mean": 0.12200850769256666,
+              "std": 0.3970099456236448
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 74,
+          "cusum_fp": 2,
+          "cusum_tp": 14,
+          "adwin_detected": true,
+          "adwin_delay": 40,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 24,
+          "perf_only_fp": 1,
+          "perf_only_tp": 18
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 5042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 5042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 9,
+          "true_positives": 8,
+          "total_alerts": 17,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006530402749795978,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.16451700562812188,
+              "std": 0.02406486656907557
+            },
+            "P": {
+              "mean": 0.12200850769256666,
+              "std": 0.11466667460553696
+            }
+          },
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1_score": 0.18181818181818182,
+          "cusum_detected": true,
+          "cusum_delay": 5,
+          "cusum_fp": 2,
+          "cusum_tp": 44,
+          "adwin_detected": true,
+          "adwin_delay": 12,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 18,
+          "perf_only_fp": 105,
+          "perf_only_tp": 79
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 6042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 6042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 6,
+          "true_positives": 5,
+          "total_alerts": 11,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0005782606792019316,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.2296106137273508,
+              "std": 0.03508600334824707
+            },
+            "P": {
+              "mean": 0.02045376387799926,
+              "std": 0.1791068159229405
+            }
+          },
+          "precision": 0.14285714285714285,
+          "recall": 1.0,
+          "f1_score": 0.25,
+          "cusum_detected": true,
+          "cusum_delay": 10,
+          "cusum_fp": 2,
+          "cusum_tp": 43,
+          "adwin_detected": true,
+          "adwin_delay": 23,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 10,
+          "perf_only_fp": 110,
+          "perf_only_tp": 149
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 7042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 7042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 13,
+          "true_positives": 10,
+          "total_alerts": 23,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.001185294122178267,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.23891479378654545,
+              "std": 0.015081475686355685
+            },
+            "P": {
+              "mean": -0.04060103533960189,
+              "std": 0.41762751247906277
+            }
+          },
+          "precision": 0.07142857142857142,
+          "recall": 1.0,
+          "f1_score": 0.13333333333333333,
+          "cusum_detected": true,
+          "cusum_delay": 4,
+          "cusum_fp": 7,
+          "cusum_tp": 45,
+          "adwin_detected": true,
+          "adwin_delay": 19,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 6,
+          "perf_only_fp": 32,
+          "perf_only_tp": 30
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 8042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 8042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 12,
+          "true_positives": 11,
+          "total_alerts": 23,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008655587898681814,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.08696453667413133,
+              "std": 0.020793922685914675
+            },
+            "P": {
+              "mean": 0.039805509382532835,
+              "std": 0.05849432694705126
+            }
+          },
+          "precision": 0.07692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.14285714285714288,
+          "cusum_detected": true,
+          "cusum_delay": 34,
+          "cusum_fp": 0,
+          "cusum_tp": 25,
+          "adwin_detected": true,
+          "adwin_delay": 43,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 4,
+          "perf_only_fp": 185,
+          "perf_only_tp": 124
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 9042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 500,
+            "seed": 9042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 11,
+          "true_positives": 9,
+          "total_alerts": 20,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0004668919977246991,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.09529541059381326,
+              "std": 0.01891745218316887
+            },
+            "P": {
+              "mean": -0.07932297795381028,
+              "std": 0.09182731913414308
+            }
+          },
+          "precision": 0.08333333333333333,
+          "recall": 1.0,
+          "f1_score": 0.15384615384615385,
+          "cusum_detected": true,
+          "cusum_delay": 18,
+          "cusum_fp": 2,
+          "cusum_tp": 19,
+          "adwin_detected": true,
+          "adwin_delay": 35,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 41,
+          "perf_only_fp": 157,
+          "perf_only_tp": 125
+        }
+      ],
+      "summary": {
+        "smf_aas": {
+          "detection_rate": 1.0,
+          "mean_delay": 49.0,
+          "std_delay": 0.0,
+          "mean_fp": 9.1,
+          "std_fp": 3.8065732621348563,
+          "precision": 0.09900990099009901,
+          "recall": 1.0,
+          "f1_score": 0.18018018018018017
+        },
+        "cusum": {
+          "detection_rate": 1.0,
+          "mean_delay": 19.1,
+          "std_delay": 20.07710138441304,
+          "mean_fp": 2.6,
+          "std_fp": 3.1368774282716245,
+          "precision": 0.2777777777777778,
+          "recall": 1.0,
+          "f1_score": 0.4347826086956522
+        },
+        "adwin": {
+          "detection_rate": 1.0,
+          "mean_delay": 28.2,
+          "std_delay": 13.113351974228404,
+          "mean_fp": 0.0,
+          "std_fp": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "perf_only": {
+          "detection_rate": 0.9,
+          "mean_delay": 17.11111111111111,
+          "std_delay": 13.411806112894585,
+          "mean_fp": 72.6,
+          "std_fp": 61.14114817371359,
+          "precision": 0.012244897959183673,
+          "recall": 0.9,
+          "f1_score": 0.024161073825503355
+        }
+      }
+    },
+    "750": {
+      "env_name": "connectfour-pz",
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        1042,
+        2042,
+        3042,
+        4042,
+        5042,
+        6042,
+        7042,
+        8042,
+        9042
+      ],
+      "config": {
+        "n_episodes": 1500,
+        "change_point": 900,
+        "baseline_episodes": 200,
+        "window_size": 50,
+        "training_episodes": 750,
+        "cusum_threshold": 5.0,
+        "cusum_drift": 0.5
+      },
+      "individual_results": [
+        {
+          "env_name": "connectfour-pz",
+          "seed": 42,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 42,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 13,
+          "true_positives": 9,
+          "total_alerts": 22,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008890615143319609,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.24714542020326055,
+              "std": 0.011376848303983077
+            },
+            "P": {
+              "mean": -0.08089647953197826,
+              "std": 0.15026187087963266
+            }
+          },
+          "precision": 0.07142857142857142,
+          "recall": 1.0,
+          "f1_score": 0.13333333333333333,
+          "cusum_detected": true,
+          "cusum_delay": 5,
+          "cusum_fp": 3,
+          "cusum_tp": 35,
+          "adwin_detected": true,
+          "adwin_delay": 63,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 43,
+          "perf_only_fp": 31,
+          "perf_only_tp": 2
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 1042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 1042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 9,
+          "true_positives": 8,
+          "total_alerts": 17,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0010504866185111895,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1493774015594397,
+              "std": 0.030500258082356145
+            },
+            "P": {
+              "mean": 0.2,
+              "std": 0.125556231511665
+            }
+          },
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1_score": 0.18181818181818182,
+          "cusum_detected": true,
+          "cusum_delay": 48,
+          "cusum_fp": 0,
+          "cusum_tp": 17,
+          "adwin_detected": true,
+          "adwin_delay": 48,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 42,
+          "perf_only_fp": 5,
+          "perf_only_tp": 33
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 2042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 2042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 11,
+          "total_alerts": 25,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0010347564178665788,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.10943908642242356,
+              "std": 0.010291072284885367
+            },
+            "P": {
+              "mean": 0.04151908781024151,
+              "std": 0.03171172154772372
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 10,
+          "cusum_fp": 0,
+          "cusum_tp": 23,
+          "adwin_detected": true,
+          "adwin_delay": 33,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 18,
+          "perf_only_fp": 30,
+          "perf_only_tp": 81
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 3042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 3042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 11,
+          "true_positives": 8,
+          "total_alerts": 19,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009035399051405272,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.308235934973561,
+              "std": 0.06583785269021991
+            },
+            "P": {
+              "mean": -0.14125965617729813,
+              "std": 0.026155381152082897
+            }
+          },
+          "precision": 0.08333333333333333,
+          "recall": 1.0,
+          "f1_score": 0.15384615384615385,
+          "cusum_detected": true,
+          "cusum_delay": 7,
+          "cusum_fp": 4,
+          "cusum_tp": 34,
+          "adwin_detected": true,
+          "adwin_delay": 46,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 20,
+          "perf_only_fp": 126,
+          "perf_only_tp": 146
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 4042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 4042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 4,
+          "true_positives": 6,
+          "total_alerts": 10,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009833503029118475,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.17553570255774587,
+              "std": 0.1674712325575221
+            },
+            "P": {
+              "mean": 0.08029550685469664,
+              "std": 0.08849670477851229
+            }
+          },
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1_score": 0.33333333333333337,
+          "cusum_detected": true,
+          "cusum_delay": 8,
+          "cusum_fp": 0,
+          "cusum_tp": 26,
+          "adwin_detected": true,
+          "adwin_delay": 21,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 16,
+          "perf_only_fp": 27,
+          "perf_only_tp": 80
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 5042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 5042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 0,
+          "true_positives": 6,
+          "total_alerts": 6,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006721301091542403,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.10975682195180123,
+              "std": 0.04471798515036486
+            },
+            "P": {
+              "mean": -0.07932297795381028,
+              "std": 0.2995720942698937
+            }
+          },
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "cusum_detected": true,
+          "cusum_delay": 27,
+          "cusum_fp": 0,
+          "cusum_tp": 20,
+          "adwin_detected": true,
+          "adwin_delay": 53,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 54,
+          "perf_only_fp": 110,
+          "perf_only_tp": 38
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 6042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 6042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 11,
+          "true_positives": 8,
+          "total_alerts": 19,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.001093902765697684,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1661477232674975,
+              "std": 0.08453841436629228
+            },
+            "P": {
+              "mean": -0.019949173996614705,
+              "std": 0.029576645367380958
+            }
+          },
+          "precision": 0.08333333333333333,
+          "recall": 1.0,
+          "f1_score": 0.15384615384615385,
+          "cusum_detected": true,
+          "cusum_delay": 20,
+          "cusum_fp": 6,
+          "cusum_tp": 44,
+          "adwin_detected": true,
+          "adwin_delay": 36,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 28,
+          "perf_only_fp": 18,
+          "perf_only_tp": 41
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 7042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 7042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 6,
+          "true_positives": 6,
+          "total_alerts": 12,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008917317433932986,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.246422580320096,
+              "std": 0.0604852923189691
+            },
+            "P": {
+              "mean": 0.2800000000000001,
+              "std": 0.46023718502399125
+            }
+          },
+          "precision": 0.14285714285714285,
+          "recall": 1.0,
+          "f1_score": 0.25,
+          "cusum_detected": true,
+          "cusum_delay": 43,
+          "cusum_fp": 4,
+          "cusum_tp": 7,
+          "adwin_detected": true,
+          "adwin_delay": 41,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 37,
+          "perf_only_fp": 9,
+          "perf_only_tp": 50
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 8042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 8042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 11,
+          "total_alerts": 25,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0007783347932692579,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.18744375581769476,
+              "std": 0.07925538724345081
+            },
+            "P": {
+              "mean": 0.11903224226567849,
+              "std": 0.01
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 6,
+          "cusum_fp": 2,
+          "cusum_tp": 34,
+          "adwin_detected": true,
+          "adwin_delay": 27,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 24,
+          "perf_only_fp": 56,
+          "perf_only_tp": 92
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 9042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 750,
+            "seed": 9042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 10,
+          "true_positives": 8,
+          "total_alerts": 18,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0004440808602905266,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.14132909264320467,
+              "std": 0.09042672541723257
+            },
+            "P": {
+              "mean": -0.14173160455805292,
+              "std": 0.05649197732330056
+            }
+          },
+          "precision": 0.09090909090909091,
+          "recall": 1.0,
+          "f1_score": 0.16666666666666669,
+          "cusum_detected": true,
+          "cusum_delay": 18,
+          "cusum_fp": 3,
+          "cusum_tp": 41,
+          "adwin_detected": true,
+          "adwin_delay": 63,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 16,
+          "perf_only_fp": 224,
+          "perf_only_tp": 239
+        }
+      ],
+      "summary": {
+        "smf_aas": {
+          "detection_rate": 1.0,
+          "mean_delay": 49.0,
+          "std_delay": 0.0,
+          "mean_fp": 9.2,
+          "std_fp": 4.354308211415448,
+          "precision": 0.09803921568627451,
+          "recall": 1.0,
+          "f1_score": 0.17857142857142855
+        },
+        "cusum": {
+          "detection_rate": 1.0,
+          "mean_delay": 19.2,
+          "std_delay": 14.810806865258893,
+          "mean_fp": 2.2,
+          "std_fp": 2.039607805437114,
+          "precision": 0.3125,
+          "recall": 1.0,
+          "f1_score": 0.47619047619047616
+        },
+        "adwin": {
+          "detection_rate": 1.0,
+          "mean_delay": 43.1,
+          "std_delay": 13.51628647225265,
+          "mean_fp": 0.0,
+          "std_fp": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0
+        },
+        "perf_only": {
+          "detection_rate": 1.0,
+          "mean_delay": 29.8,
+          "std_delay": 12.702755606560334,
+          "mean_fp": 63.6,
+          "std_fp": 66.22567477949923,
+          "precision": 0.015479876160990712,
+          "recall": 1.0,
+          "f1_score": 0.030487804878048783
+        }
+      }
+    },
+    "1000": {
+      "env_name": "connectfour-pz",
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        1042,
+        2042,
+        3042,
+        4042,
+        5042,
+        6042,
+        7042,
+        8042,
+        9042
+      ],
+      "config": {
+        "n_episodes": 1500,
+        "change_point": 900,
+        "baseline_episodes": 200,
+        "window_size": 50,
+        "training_episodes": 1000,
+        "cusum_threshold": 5.0,
+        "cusum_drift": 0.5
+      },
+      "individual_results": [
+        {
+          "env_name": "connectfour-pz",
+          "seed": 42,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 42,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 13,
+          "true_positives": 12,
+          "total_alerts": 25,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0005886424769902017,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.05469999129017205,
+              "std": 0.019046531557012823
+            },
+            "P": {
+              "mean": -0.039677414088559494,
+              "std": 0.23673075398283808
+            }
+          },
+          "precision": 0.07142857142857142,
+          "recall": 1.0,
+          "f1_score": 0.13333333333333333,
+          "cusum_detected": true,
+          "cusum_delay": 24,
+          "cusum_fp": 3,
+          "cusum_tp": 10,
+          "adwin_detected": true,
+          "adwin_delay": 27,
+          "adwin_fp": 1,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 0,
+          "perf_only_fp": 119,
+          "perf_only_tp": 108
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 1042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 1042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 12,
+          "true_positives": 7,
+          "total_alerts": 19,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009315344142402803,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.3106153420423665,
+              "std": 0.06561585832647407
+            },
+            "P": {
+              "mean": 0.06061546448285276,
+              "std": 0.028019942521380226
+            }
+          },
+          "precision": 0.07692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.14285714285714288,
+          "cusum_detected": true,
+          "cusum_delay": 21,
+          "cusum_fp": 1,
+          "cusum_tp": 19,
+          "adwin_detected": true,
+          "adwin_delay": 25,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 8,
+          "perf_only_fp": 315,
+          "perf_only_tp": 299
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 2042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 2042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 3,
+          "true_positives": 2,
+          "total_alerts": 5,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009566365015134697,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.2805498875908671,
+              "std": 0.13467906246483877
+            },
+            "P": {
+              "mean": 0.04101711147163337,
+              "std": 0.1159494153898025
+            }
+          },
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1_score": 0.4,
+          "cusum_detected": true,
+          "cusum_delay": 17,
+          "cusum_fp": 3,
+          "cusum_tp": 41,
+          "adwin_detected": true,
+          "adwin_delay": 32,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 31,
+          "perf_only_fp": 48,
+          "perf_only_tp": 97
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 3042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 3042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 9,
+          "true_positives": 9,
+          "total_alerts": 18,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0007574915594748603,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.15925147626221078,
+              "std": 0.029134360096928377
+            },
+            "P": {
+              "mean": -0.07925939239012171,
+              "std": 0.27520583308241187
+            }
+          },
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1_score": 0.18181818181818182,
+          "cusum_detected": true,
+          "cusum_delay": 12,
+          "cusum_fp": 0,
+          "cusum_tp": 25,
+          "adwin_detected": true,
+          "adwin_delay": 22,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 35,
+          "perf_only_fp": 0,
+          "perf_only_tp": 26
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 4042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 4042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 4,
+          "true_positives": 5,
+          "total_alerts": 9,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.001226325928410228,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.21586647068285472,
+              "std": 0.1402662762098137
+            },
+            "P": {
+              "mean": 0.0,
+              "std": 0.11993712055411096
+            }
+          },
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1_score": 0.33333333333333337,
+          "cusum_detected": true,
+          "cusum_delay": 36,
+          "cusum_fp": 0,
+          "cusum_tp": 23,
+          "adwin_detected": true,
+          "adwin_delay": 43,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 0,
+          "perf_only_fp": 46,
+          "perf_only_tp": 66
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 5042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 5042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 9,
+          "true_positives": 12,
+          "total_alerts": 21,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0010310957022336964,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.15571282261153443,
+              "std": 0.011404053212324778
+            },
+            "P": {
+              "mean": -0.2086996778999804,
+              "std": 0.49216805437508265
+            }
+          },
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1_score": 0.18181818181818182,
+          "cusum_detected": true,
+          "cusum_delay": 7,
+          "cusum_fp": 14,
+          "cusum_tp": 64,
+          "adwin_detected": true,
+          "adwin_delay": 22,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 42,
+          "perf_only_fp": 0,
+          "perf_only_tp": 17
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 6042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 6042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 5,
+          "true_positives": 6,
+          "total_alerts": 11,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006417860079759545,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1868799313689997,
+              "std": 0.030155559459805973
+            },
+            "P": {
+              "mean": 0.12019639947674991,
+              "std": 0.24387304964743564
+            }
+          },
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "f1_score": 0.2857142857142857,
+          "cusum_detected": true,
+          "cusum_delay": 58,
+          "cusum_fp": 0,
+          "cusum_tp": 18,
+          "adwin_detected": true,
+          "adwin_delay": 59,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 12,
+          "perf_only_fp": 51,
+          "perf_only_tp": 53
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 7042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 7042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 11,
+          "total_alerts": 25,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006902977038714263,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.29046904752742836,
+              "std": 0.01
+            },
+            "P": {
+              "mean": -0.039677414088559494,
+              "std": 0.0588257341276983
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 16,
+          "cusum_fp": 1,
+          "cusum_tp": 30,
+          "adwin_detected": true,
+          "adwin_delay": 54,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 19,
+          "perf_only_fp": 149,
+          "perf_only_tp": 201
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 8042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 8042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 3,
+          "true_positives": 8,
+          "total_alerts": 11,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0005270222372475349,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.13372791325417877,
+              "std": 0.061333074799344564
+            },
+            "P": {
+              "mean": -0.07983723279170814,
+              "std": 0.6079560171930816
+            }
+          },
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1_score": 0.4,
+          "cusum_detected": true,
+          "cusum_delay": 10,
+          "cusum_fp": 6,
+          "cusum_tp": 45,
+          "adwin_detected": true,
+          "adwin_delay": 59,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 86,
+          "perf_only_fp": 0,
+          "perf_only_tp": 4
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 9042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1000,
+            "seed": 9042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 3,
+          "true_positives": 8,
+          "total_alerts": 11,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.000832342369544134,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.16374688641482138,
+              "std": 0.04600330099093167
+            },
+            "P": {
+              "mean": -0.16098868088129928,
+              "std": 0.11728750499058277
+            }
+          },
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1_score": 0.4,
+          "cusum_detected": true,
+          "cusum_delay": 8,
+          "cusum_fp": 1,
+          "cusum_tp": 40,
+          "adwin_detected": true,
+          "adwin_delay": 47,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 29,
+          "perf_only_fp": 28,
+          "perf_only_tp": 48
+        }
+      ],
+      "summary": {
+        "smf_aas": {
+          "detection_rate": 1.0,
+          "mean_delay": 49.0,
+          "std_delay": 0.0,
+          "mean_fp": 7.5,
+          "std_fp": 4.201190307520001,
+          "precision": 0.11764705882352941,
+          "recall": 1.0,
+          "f1_score": 0.21052631578947367
+        },
+        "cusum": {
+          "detection_rate": 1.0,
+          "mean_delay": 20.9,
+          "std_delay": 14.869095466772684,
+          "mean_fp": 2.9,
+          "std_fp": 4.109744517606904,
+          "precision": 0.2564102564102564,
+          "recall": 1.0,
+          "f1_score": 0.4081632653061224
+        },
+        "adwin": {
+          "detection_rate": 1.0,
+          "mean_delay": 39.0,
+          "std_delay": 14.394443372357264,
+          "mean_fp": 0.1,
+          "std_fp": 0.30000000000000004,
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1_score": 0.9523809523809523
+        },
+        "perf_only": {
+          "detection_rate": 1.0,
+          "mean_delay": 26.2,
+          "std_delay": 24.272618317767037,
+          "mean_fp": 75.6,
+          "std_fp": 92.86463266497101,
+          "precision": 0.013054830287206266,
+          "recall": 1.0,
+          "f1_score": 0.02577319587628866
+        }
+      }
+    },
+    "1500": {
+      "env_name": "connectfour-pz",
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        1042,
+        2042,
+        3042,
+        4042,
+        5042,
+        6042,
+        7042,
+        8042,
+        9042
+      ],
+      "config": {
+        "n_episodes": 1500,
+        "change_point": 900,
+        "baseline_episodes": 200,
+        "window_size": 50,
+        "training_episodes": 1500,
+        "cusum_threshold": 5.0,
+        "cusum_drift": 0.5
+      },
+      "individual_results": [
+        {
+          "env_name": "connectfour-pz",
+          "seed": 42,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 42,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 12,
+          "true_positives": 11,
+          "total_alerts": 23,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.000746548503021318,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.13833230112185596,
+              "std": 0.01
+            },
+            "P": {
+              "mean": -0.039677414088559494,
+              "std": 0.1176514682553966
+            }
+          },
+          "precision": 0.07692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.14285714285714288,
+          "cusum_detected": true,
+          "cusum_delay": 24,
+          "cusum_fp": 5,
+          "cusum_tp": 55,
+          "adwin_detected": true,
+          "adwin_delay": 34,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 12,
+          "perf_only_fp": 107,
+          "perf_only_tp": 127
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 1042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 1042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 8,
+          "total_alerts": 22,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009028632617434325,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.2277101048588283,
+              "std": 0.021934704065677678
+            },
+            "P": {
+              "mean": 0.08256749544674241,
+              "std": 0.1224145687493403
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 25,
+          "cusum_fp": 1,
+          "cusum_tp": 14,
+          "adwin_detected": true,
+          "adwin_delay": 56,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 30,
+          "perf_only_fp": 82,
+          "perf_only_tp": 114
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 2042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 2042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 10,
+          "true_positives": 11,
+          "total_alerts": 21,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008792507489024099,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1196168279356142,
+              "std": 0.023438331617366404
+            },
+            "P": {
+              "mean": -0.16055800764312966,
+              "std": 0.09610001500183897
+            }
+          },
+          "precision": 0.09090909090909091,
+          "recall": 1.0,
+          "f1_score": 0.16666666666666669,
+          "cusum_detected": true,
+          "cusum_delay": 0,
+          "cusum_fp": 6,
+          "cusum_tp": 53,
+          "adwin_detected": true,
+          "adwin_delay": 10,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 4,
+          "perf_only_fp": 4,
+          "perf_only_tp": 87
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 3042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 3042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 8,
+          "true_positives": 12,
+          "total_alerts": 20,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0004680710226556952,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.059785648707766544,
+              "std": 0.01432384601588313
+            },
+            "P": {
+              "mean": 0.0,
+              "std": 0.11788843016365771
+            }
+          },
+          "precision": 0.1111111111111111,
+          "recall": 1.0,
+          "f1_score": 0.19999999999999998,
+          "cusum_detected": true,
+          "cusum_delay": 65,
+          "cusum_fp": 0,
+          "cusum_tp": 26,
+          "adwin_detected": true,
+          "adwin_delay": 77,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 12,
+          "perf_only_fp": 123,
+          "perf_only_tp": 159
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 4042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 4042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 10,
+          "true_positives": 10,
+          "total_alerts": 20,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0010923241239180173,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.21746709281780957,
+              "std": 0.16721403744240815
+            },
+            "P": {
+              "mean": -0.20615002241881616,
+              "std": 0.02090070575795526
+            }
+          },
+          "precision": 0.09090909090909091,
+          "recall": 1.0,
+          "f1_score": 0.16666666666666669,
+          "cusum_detected": true,
+          "cusum_delay": 6,
+          "cusum_fp": 10,
+          "cusum_tp": 55,
+          "adwin_detected": true,
+          "adwin_delay": 46,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 16,
+          "perf_only_fp": 51,
+          "perf_only_tp": 58
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 5042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 5042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 12,
+          "total_alerts": 26,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009230441590800129,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.10444323254734773,
+              "std": 0.01
+            },
+            "P": {
+              "mean": -0.05972637303566956,
+              "std": 0.01
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 147,
+          "cusum_fp": 1,
+          "cusum_tp": 10,
+          "adwin_detected": true,
+          "adwin_delay": 18,
+          "adwin_fp": 1,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 17,
+          "perf_only_fp": 32,
+          "perf_only_tp": 59
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 6042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 6042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 10,
+          "true_positives": 8,
+          "total_alerts": 18,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008829927523751162,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.2277943565549331,
+              "std": 0.08064593197409124
+            },
+            "P": {
+              "mean": -0.08029550685469664,
+              "std": 0.060030470252230045
+            }
+          },
+          "precision": 0.09090909090909091,
+          "recall": 1.0,
+          "f1_score": 0.16666666666666669,
+          "cusum_detected": true,
+          "cusum_delay": 14,
+          "cusum_fp": 1,
+          "cusum_tp": 28,
+          "adwin_detected": true,
+          "adwin_delay": 29,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 35,
+          "perf_only_fp": 153,
+          "perf_only_tp": 158
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 7042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 7042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 8,
+          "true_positives": 9,
+          "total_alerts": 17,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008307666518935056,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.07399540612689072,
+              "std": 0.04632651002923494
+            },
+            "P": {
+              "mean": 0.07932297795381028,
+              "std": 0.060598934749910294
+            }
+          },
+          "precision": 0.1111111111111111,
+          "recall": 1.0,
+          "f1_score": 0.19999999999999998,
+          "cusum_detected": true,
+          "cusum_delay": 65,
+          "cusum_fp": 0,
+          "cusum_tp": 15,
+          "adwin_detected": true,
+          "adwin_delay": 94,
+          "adwin_fp": 2,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 22,
+          "perf_only_fp": 77,
+          "perf_only_tp": 19
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 8042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 8042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 9,
+          "true_positives": 9,
+          "total_alerts": 18,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009813007760080396,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.12290233951814922,
+              "std": 0.01
+            },
+            "P": {
+              "mean": 0.06138750320786905,
+              "std": 0.20550688774401332
+            }
+          },
+          "precision": 0.1,
+          "recall": 1.0,
+          "f1_score": 0.18181818181818182,
+          "cusum_detected": true,
+          "cusum_delay": 69,
+          "cusum_fp": 0,
+          "cusum_tp": 10,
+          "adwin_detected": true,
+          "adwin_delay": 39,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 20,
+          "perf_only_fp": 35,
+          "perf_only_tp": 65
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 9042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 1500,
+            "seed": 9042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 14,
+          "true_positives": 12,
+          "total_alerts": 26,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008204217149666015,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1603562767615649,
+              "std": 0.01
+            },
+            "P": {
+              "mean": -0.07932297795381028,
+              "std": 0.01
+            }
+          },
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1_score": 0.125,
+          "cusum_detected": true,
+          "cusum_delay": 12,
+          "cusum_fp": 0,
+          "cusum_tp": 32,
+          "adwin_detected": true,
+          "adwin_delay": 30,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 3,
+          "perf_only_fp": 63,
+          "perf_only_tp": 114
+        }
+      ],
+      "summary": {
+        "smf_aas": {
+          "detection_rate": 1.0,
+          "mean_delay": 49.0,
+          "std_delay": 0.0,
+          "mean_fp": 10.9,
+          "std_fp": 2.3,
+          "precision": 0.08403361344537816,
+          "recall": 1.0,
+          "f1_score": 0.1550387596899225
+        },
+        "cusum": {
+          "detection_rate": 1.0,
+          "mean_delay": 42.7,
+          "std_delay": 42.619361797192596,
+          "mean_fp": 2.4,
+          "std_fp": 3.2619012860600183,
+          "precision": 0.29411764705882354,
+          "recall": 1.0,
+          "f1_score": 0.45454545454545453
+        },
+        "adwin": {
+          "detection_rate": 1.0,
+          "mean_delay": 43.3,
+          "std_delay": 24.71861646613742,
+          "mean_fp": 0.3,
+          "std_fp": 0.6403124237432849,
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.8695652173913044
+        },
+        "perf_only": {
+          "detection_rate": 1.0,
+          "mean_delay": 17.1,
+          "std_delay": 9.71030380575191,
+          "mean_fp": 72.7,
+          "std_fp": 43.153331273494985,
+          "precision": 0.013568521031207599,
+          "recall": 1.0,
+          "f1_score": 0.026773761713520753
+        }
+      }
+    },
+    "2000": {
+      "env_name": "connectfour-pz",
+      "n_seeds": 10,
+      "seeds": [
+        42,
+        1042,
+        2042,
+        3042,
+        4042,
+        5042,
+        6042,
+        7042,
+        8042,
+        9042
+      ],
+      "config": {
+        "n_episodes": 1500,
+        "change_point": 900,
+        "baseline_episodes": 200,
+        "window_size": 50,
+        "training_episodes": 2000,
+        "cusum_threshold": 5.0,
+        "cusum_drift": 0.5
+      },
+      "individual_results": [
+        {
+          "env_name": "connectfour-pz",
+          "seed": 42,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 42,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 0,
+          "true_positives": 1,
+          "total_alerts": 1,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0007083449374506295,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.26819205698592885,
+              "std": 0.12730469127363306
+            },
+            "P": {
+              "mean": 0.12099175240229225,
+              "std": 0.21086142787850443
+            }
+          },
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "cusum_detected": true,
+          "cusum_delay": 59,
+          "cusum_fp": 1,
+          "cusum_tp": 10,
+          "adwin_detected": true,
+          "adwin_delay": 39,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 35,
+          "perf_only_fp": 40,
+          "perf_only_tp": 108
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 1042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 1042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 3,
+          "true_positives": 8,
+          "total_alerts": 11,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0011201206005454843,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.12961534906582534,
+              "std": 0.0312577900525705
+            },
+            "P": {
+              "mean": 0.06009204812366635,
+              "std": 0.4157648625580227
+            }
+          },
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1_score": 0.4,
+          "cusum_detected": true,
+          "cusum_delay": 21,
+          "cusum_fp": 1,
+          "cusum_tp": 21,
+          "adwin_detected": true,
+          "adwin_delay": 39,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 51,
+          "perf_only_fp": 7,
+          "perf_only_tp": 16
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 2042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 2042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 13,
+          "true_positives": 10,
+          "total_alerts": 23,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0009495642092065211,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.15421969863874332,
+              "std": 0.024660669847234806
+            },
+            "P": {
+              "mean": 0.11903224226567849,
+              "std": 0.03140522889591646
+            }
+          },
+          "precision": 0.07142857142857142,
+          "recall": 1.0,
+          "f1_score": 0.13333333333333333,
+          "cusum_detected": true,
+          "cusum_delay": 42,
+          "cusum_fp": 1,
+          "cusum_tp": 15,
+          "adwin_detected": true,
+          "adwin_delay": 42,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 10,
+          "perf_only_fp": 163,
+          "perf_only_tp": 190
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 3042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 3042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 5,
+          "true_positives": 9,
+          "total_alerts": 14,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006519550244064554,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1676231450021501,
+              "std": 0.059991680651614976
+            },
+            "P": {
+              "mean": 0.02002248684719056,
+              "std": 0.059370677999289447
+            }
+          },
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "f1_score": 0.2857142857142857,
+          "cusum_detected": true,
+          "cusum_delay": 23,
+          "cusum_fp": 1,
+          "cusum_tp": 14,
+          "adwin_detected": true,
+          "adwin_delay": 24,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 24,
+          "perf_only_fp": 54,
+          "perf_only_tp": 103
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 4042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 4042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 10,
+          "true_positives": 9,
+          "total_alerts": 19,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0008865592955494707,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1946451731169228,
+              "std": 0.01
+            },
+            "P": {
+              "mean": -0.039805509382532835,
+              "std": 0.11746155417255175
+            }
+          },
+          "precision": 0.09090909090909091,
+          "recall": 1.0,
+          "f1_score": 0.16666666666666669,
+          "cusum_detected": true,
+          "cusum_delay": 14,
+          "cusum_fp": 2,
+          "cusum_tp": 30,
+          "adwin_detected": true,
+          "adwin_delay": 26,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 35,
+          "perf_only_fp": 57,
+          "perf_only_tp": 91
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 5042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 5042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 13,
+          "true_positives": 12,
+          "total_alerts": 25,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006971871781274103,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.22828845928936242,
+              "std": 0.030991550256989936
+            },
+            "P": {
+              "mean": 0.0,
+              "std": 0.01
+            }
+          },
+          "precision": 0.07142857142857142,
+          "recall": 1.0,
+          "f1_score": 0.13333333333333333,
+          "cusum_detected": true,
+          "cusum_delay": 31,
+          "cusum_fp": 5,
+          "cusum_tp": 8,
+          "adwin_detected": true,
+          "adwin_delay": 26,
+          "adwin_fp": 1,
+          "adwin_tp": 2,
+          "perf_only_detected": true,
+          "perf_only_delay": 45,
+          "perf_only_fp": 54,
+          "perf_only_tp": 43
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 6042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 6042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 7,
+          "true_positives": 8,
+          "total_alerts": 15,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.000701543374137654,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.14080955734570072,
+              "std": 0.08679067026561628
+            },
+            "P": {
+              "mean": 0.08029550685469664,
+              "std": 0.060030470252230045
+            }
+          },
+          "precision": 0.125,
+          "recall": 1.0,
+          "f1_score": 0.2222222222222222,
+          "cusum_detected": true,
+          "cusum_delay": 17,
+          "cusum_fp": 0,
+          "cusum_tp": 24,
+          "adwin_detected": true,
+          "adwin_delay": 23,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 22,
+          "perf_only_fp": 0,
+          "perf_only_tp": 58
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 7042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 7042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 0,
+          "true_positives": 2,
+          "total_alerts": 2,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0012500600257347465,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.17106066632540523,
+              "std": 0.12156185533182443
+            },
+            "P": {
+              "mean": 0.16778202495935435,
+              "std": 0.2893934861301767
+            }
+          },
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_score": 1.0,
+          "cusum_detected": true,
+          "cusum_delay": 4,
+          "cusum_fp": 7,
+          "cusum_tp": 50,
+          "adwin_detected": true,
+          "adwin_delay": 40,
+          "adwin_fp": 2,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 13,
+          "perf_only_fp": 6,
+          "perf_only_tp": 17
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 8042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 8042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 1,
+          "true_positives": 7,
+          "total_alerts": 8,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0007386947184554759,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.1438234292957282,
+              "std": 0.037345066378889645
+            },
+            "P": {
+              "mean": 0.08089647953197826,
+              "std": 0.2351629234568485
+            }
+          },
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1_score": 0.6666666666666666,
+          "cusum_detected": true,
+          "cusum_delay": 12,
+          "cusum_fp": 3,
+          "cusum_tp": 33,
+          "adwin_detected": true,
+          "adwin_delay": 24,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 19,
+          "perf_only_fp": 13,
+          "perf_only_tp": 68
+        },
+        {
+          "env_name": "connectfour-pz",
+          "seed": 9042,
+          "config": {
+            "env_name": "connectfour-pz",
+            "n_episodes": 1500,
+            "change_point": 900,
+            "baseline_episodes": 200,
+            "window_size": 50,
+            "training_episodes": 2000,
+            "seed": 9042,
+            "cusum_threshold": 5.0,
+            "cusum_drift": 0.5,
+            "cusum_warmup": 50,
+            "yellow_threshold": 2.0,
+            "red_threshold": 3.0,
+            "use_log_cds": false
+          },
+          "detected": true,
+          "detection_delay": 49,
+          "false_positives": 5,
+          "true_positives": 5,
+          "total_alerts": 10,
+          "baseline_stats": {
+            "S": {
+              "mean": 0.0006719574089065657,
+              "std": 0.01
+            },
+            "B": {
+              "mean": 0.2689468192337311,
+              "std": 0.05958016315626774
+            },
+            "P": {
+              "mean": 0.039805509382532835,
+              "std": 0.11746155417255175
+            }
+          },
+          "precision": 0.16666666666666666,
+          "recall": 1.0,
+          "f1_score": 0.2857142857142857,
+          "cusum_detected": true,
+          "cusum_delay": 32,
+          "cusum_fp": 1,
+          "cusum_tp": 30,
+          "adwin_detected": true,
+          "adwin_delay": 52,
+          "adwin_fp": 0,
+          "adwin_tp": 1,
+          "perf_only_detected": true,
+          "perf_only_delay": 29,
+          "perf_only_fp": 9,
+          "perf_only_tp": 113
+        }
+      ],
+      "summary": {
+        "smf_aas": {
+          "detection_rate": 1.0,
+          "mean_delay": 49.0,
+          "std_delay": 0.0,
+          "mean_fp": 5.7,
+          "std_fp": 4.712748667179271,
+          "precision": 0.14925373134328357,
+          "recall": 1.0,
+          "f1_score": 0.2597402597402597
+        },
+        "cusum": {
+          "detection_rate": 1.0,
+          "mean_delay": 25.5,
+          "std_delay": 15.305227865013967,
+          "mean_fp": 2.2,
+          "std_fp": 2.0880613017821097,
+          "precision": 0.3125,
+          "recall": 1.0,
+          "f1_score": 0.47619047619047616
+        },
+        "adwin": {
+          "detection_rate": 1.0,
+          "mean_delay": 33.5,
+          "std_delay": 9.594269122762817,
+          "mean_fp": 0.3,
+          "std_fp": 0.6403124237432849,
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1_score": 0.8695652173913044
+        },
+        "perf_only": {
+          "detection_rate": 1.0,
+          "mean_delay": 28.3,
+          "std_delay": 12.641598000252975,
+          "mean_fp": 40.3,
+          "std_fp": 46.19967532353448,
+          "precision": 0.024213075060532687,
+          "recall": 1.0,
+          "f1_score": 0.04728132387706856
+        }
+      }
+    }
+  }
+}
