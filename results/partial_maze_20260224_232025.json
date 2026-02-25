@@ -1,0 +1,1141 @@
+{
+  "maze": {
+    "env_name": "maze",
+    "n_seeds": 20,
+    "seeds": [
+      100,
+      600,
+      1100,
+      1600,
+      2100,
+      2600,
+      3100,
+      3600,
+      4100,
+      4600,
+      5100,
+      5600,
+      6100,
+      6600,
+      7100,
+      7600,
+      8100,
+      8600,
+      9100,
+      9600
+    ],
+    "config": {
+      "n_episodes": 1500,
+      "change_point": 900,
+      "baseline_episodes": 200,
+      "window_size": 50,
+      "training_episodes": 1000,
+      "cusum_threshold": 5.0,
+      "cusum_drift": 0.5
+    },
+    "individual_results": [
+      {
+        "env_name": "maze",
+        "seed": 100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 3,
+        "true_positives": 3,
+        "total_alerts": 6,
+        "baseline_stats": {
+          "S": {
+            "mean": 3.829615124462154e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.11724159812920044,
+            "std": 0.048148688132146504
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 4,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 106
+      },
+      {
+        "env_name": "maze",
+        "seed": 600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 11,
+        "true_positives": 12,
+        "total_alerts": 23,
+        "baseline_stats": {
+          "S": {
+            "mean": 1.9269051643467668e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.06011874463549617,
+            "std": 0.01500093268942689
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 4,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 103
+      },
+      {
+        "env_name": "maze",
+        "seed": 1100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 1,
+        "true_positives": 9,
+        "total_alerts": 10,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00016236354961051693,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.08381595910388694,
+            "std": 0.03561190142076256
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 6,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 125
+      },
+      {
+        "env_name": "maze",
+        "seed": 1600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 6,
+        "total_alerts": 6,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00012488277276637876,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.16956744234625779,
+            "std": 0.14098585642894854
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 5,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 107
+      },
+      {
+        "env_name": "maze",
+        "seed": 2100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 2,
+        "total_alerts": 2,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00016709355774670323,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.2216503262303581,
+            "std": 0.10462312558463634
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 2,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 100
+      },
+      {
+        "env_name": "maze",
+        "seed": 2600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 11,
+        "true_positives": 10,
+        "total_alerts": 21,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.000162713750305744,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1396470605712081,
+            "std": 0.01
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 4,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 4,
+        "perf_only_fp": 0,
+        "perf_only_tp": 102
+      },
+      {
+        "env_name": "maze",
+        "seed": 3100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 9,
+        "true_positives": 4,
+        "total_alerts": 13,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00016443053109130534,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.13672701029629622,
+            "std": 0.03958150639651532
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1_score": 0.18181818181818182,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 2,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 166
+      },
+      {
+        "env_name": "maze",
+        "seed": 3600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 8,
+        "true_positives": 9,
+        "total_alerts": 17,
+        "baseline_stats": {
+          "S": {
+            "mean": 5.624766943374297e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.033752384768114096,
+            "std": 0.02978708847643955
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1_score": 0.19999999999999998,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 105
+      },
+      {
+        "env_name": "maze",
+        "seed": 4100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 10,
+        "true_positives": 10,
+        "total_alerts": 20,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00012000090109477656,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.06474155851375456,
+            "std": 0.01
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1_score": 0.16666666666666669,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 105
+      },
+      {
+        "env_name": "maze",
+        "seed": 4600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 3,
+        "true_positives": 11,
+        "total_alerts": 14,
+        "baseline_stats": {
+          "S": {
+            "mean": 8.292129190154735e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.06580701692519149,
+            "std": 0.02846020019675856
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "cusum_detected": true,
+        "cusum_delay": 42,
+        "cusum_fp": 0,
+        "cusum_tp": 1,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 42,
+        "perf_only_fp": 0,
+        "perf_only_tp": 100
+      },
+      {
+        "env_name": "maze",
+        "seed": 5100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 5,
+        "total_alerts": 5,
+        "baseline_stats": {
+          "S": {
+            "mean": 7.164079160999262e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1503240398326676,
+            "std": 0.154042384112098
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 1,
+        "cusum_fp": 0,
+        "cusum_tp": 2,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 1,
+        "perf_only_fp": 0,
+        "perf_only_tp": 200
+      },
+      {
+        "env_name": "maze",
+        "seed": 5600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 3,
+        "total_alerts": 3,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00015715933234658502,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1408339620340744,
+            "std": 0.07159738237970929
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 5,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 109
+      },
+      {
+        "env_name": "maze",
+        "seed": 6100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 1,
+        "true_positives": 9,
+        "total_alerts": 10,
+        "baseline_stats": {
+          "S": {
+            "mean": 8.064277440576065e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.11735912048561449,
+            "std": 0.03424384726628974
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6666666666666666,
+        "cusum_detected": true,
+        "cusum_delay": 1,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 1,
+        "perf_only_fp": 0,
+        "perf_only_tp": 103
+      },
+      {
+        "env_name": "maze",
+        "seed": 6600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 6,
+        "true_positives": 8,
+        "total_alerts": 14,
+        "baseline_stats": {
+          "S": {
+            "mean": 7.042344706217963e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.17859339873137672,
+            "std": 0.023464042335447532
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1_score": 0.25,
+        "cusum_detected": true,
+        "cusum_delay": 2,
+        "cusum_fp": 0,
+        "cusum_tp": 2,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 2,
+        "perf_only_fp": 0,
+        "perf_only_tp": 100
+      },
+      {
+        "env_name": "maze",
+        "seed": 7100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 7,
+        "true_positives": 6,
+        "total_alerts": 13,
+        "baseline_stats": {
+          "S": {
+            "mean": 5.690606145414441e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.21696468309440836,
+            "std": 0.058362752477037046
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.125,
+        "recall": 1.0,
+        "f1_score": 0.2222222222222222,
+        "cusum_detected": true,
+        "cusum_delay": 1,
+        "cusum_fp": 0,
+        "cusum_tp": 1,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 1,
+        "perf_only_fp": 0,
+        "perf_only_tp": 100
+      },
+      {
+        "env_name": "maze",
+        "seed": 7600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 7,
+        "total_alerts": 7,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00014407312826349383,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1315113181283684,
+            "std": 0.07048711149928388
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 1,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 1,
+        "perf_only_fp": 0,
+        "perf_only_tp": 105
+      },
+      {
+        "env_name": "maze",
+        "seed": 8100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 6,
+        "true_positives": 9,
+        "total_alerts": 15,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0001417522320061783,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.07973349293564341,
+            "std": 0.017130815009497622
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1_score": 0.25,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 123
+      },
+      {
+        "env_name": "maze",
+        "seed": 8600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 11,
+        "true_positives": 10,
+        "total_alerts": 21,
+        "baseline_stats": {
+          "S": {
+            "mean": 4.342320393366052e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.09189491128783518,
+            "std": 0.01
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 9,
+        "adwin_detected": true,
+        "adwin_delay": 4,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 108
+      },
+      {
+        "env_name": "maze",
+        "seed": 9100,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 10,
+        "true_positives": 9,
+        "total_alerts": 19,
+        "baseline_stats": {
+          "S": {
+            "mean": 7.206532230834127e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.3203213437077393,
+            "std": 0.058760300419824274
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1_score": 0.16666666666666669,
+        "cusum_detected": false,
+        "cusum_delay": null,
+        "cusum_fp": 0,
+        "cusum_tp": 0,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 0,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "maze",
+        "seed": 9600,
+        "config": {
+          "env_name": "maze",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 4,
+        "true_positives": 8,
+        "total_alerts": 12,
+        "baseline_stats": {
+          "S": {
+            "mean": 7.699433736513552e-05,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.07890428300750969,
+            "std": 0.031171159698988808
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.01
+          }
+        },
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1_score": 0.33333333333333337,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 0,
+        "cusum_tp": 1,
+        "adwin_detected": false,
+        "adwin_delay": null,
+        "adwin_fp": 0,
+        "adwin_tp": 0,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 0,
+        "perf_only_tp": 100
+      }
+    ],
+    "summary": {
+      "smf_aas": {
+        "detection_rate": 1.0,
+        "mean_delay": 49.0,
+        "std_delay": 0.0,
+        "mean_fp": 5.05,
+        "std_fp": 4.212778180725873,
+        "precision": 0.1652892561983471,
+        "recall": 1.0,
+        "f1_score": 0.28368794326241137
+      },
+      "cusum": {
+        "detection_rate": 0.95,
+        "mean_delay": 2.736842105263158,
+        "std_delay": 9.30671577135315,
+        "mean_fp": 0.0,
+        "std_fp": 0.0,
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1_score": 0.9743589743589743
+      },
+      "adwin": {
+        "detection_rate": 0.05,
+        "mean_delay": 4.0,
+        "std_delay": null,
+        "mean_fp": 0.0,
+        "std_fp": 0.0,
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1_score": 0.09523809523809523
+      },
+      "perf_only": {
+        "detection_rate": 0.95,
+        "mean_delay": 2.736842105263158,
+        "std_delay": 9.30671577135315,
+        "mean_fp": 0.0,
+        "std_fp": 0.0,
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1_score": 0.9743589743589743
+      }
+    }
+  }
+}

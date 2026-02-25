@@ -1,0 +1,1141 @@
+{
+  "kuhnpoker": {
+    "env_name": "kuhnpoker",
+    "n_seeds": 20,
+    "seeds": [
+      100,
+      600,
+      1100,
+      1600,
+      2100,
+      2600,
+      3100,
+      3600,
+      4100,
+      4600,
+      5100,
+      5600,
+      6100,
+      6600,
+      7100,
+      7600,
+      8100,
+      8600,
+      9100,
+      9600
+    ],
+    "config": {
+      "n_episodes": 1500,
+      "change_point": 900,
+      "baseline_episodes": 200,
+      "window_size": 50,
+      "training_episodes": 1000,
+      "cusum_threshold": 5.0,
+      "cusum_drift": 0.5
+    },
+    "individual_results": [
+      {
+        "env_name": "kuhnpoker",
+        "seed": 100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 99,
+        "false_positives": 6,
+        "true_positives": 4,
+        "total_alerts": 10,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.005274591301781108,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.6112906661461498,
+            "std": 0.14380500756332631
+          },
+          "P": {
+            "mean": 0.055334455561350214,
+            "std": 0.32840339789076073
+          }
+        },
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1_score": 0.25,
+        "cusum_detected": true,
+        "cusum_delay": 41,
+        "cusum_fp": 1,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 29,
+        "adwin_fp": 12,
+        "adwin_tp": 12,
+        "perf_only_detected": true,
+        "perf_only_delay": 63,
+        "perf_only_fp": 60,
+        "perf_only_tp": 31
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 6,
+        "true_positives": 6,
+        "total_alerts": 12,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.009041798385216916,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.4961109547243907,
+            "std": 0.12050690686579471
+          },
+          "P": {
+            "mean": 0.0674293694645153,
+            "std": 0.23113977071445427
+          }
+        },
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1_score": 0.25,
+        "cusum_detected": true,
+        "cusum_delay": 167,
+        "cusum_fp": 1,
+        "cusum_tp": 6,
+        "adwin_detected": true,
+        "adwin_delay": 21,
+        "adwin_fp": 8,
+        "adwin_tp": 25,
+        "perf_only_detected": true,
+        "perf_only_delay": 325,
+        "perf_only_fp": 26,
+        "perf_only_tp": 46
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 1100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 10,
+        "true_positives": 10,
+        "total_alerts": 20,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0010664032819571662,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.2766381527946921,
+            "std": 0.06442398885215182
+          },
+          "P": {
+            "mean": 0.05106406566912543,
+            "std": 0.03908961384838924
+          }
+        },
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1_score": 0.16666666666666669,
+        "cusum_detected": true,
+        "cusum_delay": 0,
+        "cusum_fp": 14,
+        "cusum_tp": 9,
+        "adwin_detected": true,
+        "adwin_delay": 23,
+        "adwin_fp": 5,
+        "adwin_tp": 3,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 194,
+        "perf_only_tp": 121
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 1600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 11,
+        "true_positives": 9,
+        "total_alerts": 20,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.003636969919418137,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.17513558701538845,
+            "std": 0.06951430854695731
+          },
+          "P": {
+            "mean": 0.2375135951848225,
+            "std": 0.06299034377898209
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 14,
+        "cusum_fp": 24,
+        "cusum_tp": 38,
+        "adwin_detected": true,
+        "adwin_delay": 75,
+        "adwin_fp": 4,
+        "adwin_tp": 15,
+        "perf_only_detected": true,
+        "perf_only_delay": 236,
+        "perf_only_fp": 6,
+        "perf_only_tp": 11
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 2100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 99,
+        "false_positives": 11,
+        "true_positives": 11,
+        "total_alerts": 22,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00993677945362859,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.6125380579467345,
+            "std": 0.07478017059815363
+          },
+          "P": {
+            "mean": 0.055694517929492995,
+            "std": 0.1091989191501229
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 171,
+        "cusum_fp": 4,
+        "cusum_tp": 6,
+        "adwin_detected": true,
+        "adwin_delay": 111,
+        "adwin_fp": 6,
+        "adwin_tp": 8,
+        "perf_only_detected": true,
+        "perf_only_delay": 215,
+        "perf_only_fp": 10,
+        "perf_only_tp": 2
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 2600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": false,
+        "detection_delay": null,
+        "false_positives": 1,
+        "true_positives": 0,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0016384194410721056,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.42116860931086936,
+            "std": 0.32254666565247814
+          },
+          "P": {
+            "mean": 0.043823767423411625,
+            "std": 0.1849045745169959
+          }
+        },
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": null,
+        "cusum_detected": true,
+        "cusum_delay": 107,
+        "cusum_fp": 3,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 22,
+        "adwin_fp": 3,
+        "adwin_tp": 10,
+        "perf_only_detected": true,
+        "perf_only_delay": 91,
+        "perf_only_fp": 72,
+        "perf_only_tp": 70
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 3100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 5,
+        "true_positives": 7,
+        "total_alerts": 12,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.003056698474367117,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.25992989959449586,
+            "std": 0.21249185131438608
+          },
+          "P": {
+            "mean": 0.09021312711849795,
+            "std": 0.0688117404756043
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": true,
+        "cusum_delay": 220,
+        "cusum_fp": 1,
+        "cusum_tp": 2,
+        "adwin_detected": true,
+        "adwin_delay": 7,
+        "adwin_fp": 3,
+        "adwin_tp": 10,
+        "perf_only_detected": true,
+        "perf_only_delay": 30,
+        "perf_only_fp": 197,
+        "perf_only_tp": 69
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 3600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 12,
+        "total_alerts": 26,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0066516038408314425,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.6413918453876499,
+            "std": 0.01
+          },
+          "P": {
+            "mean": -0.07567235920959767,
+            "std": 0.06893525655257272
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 24,
+        "cusum_fp": 21,
+        "cusum_tp": 30,
+        "adwin_detected": true,
+        "adwin_delay": 67,
+        "adwin_fp": 8,
+        "adwin_tp": 23,
+        "perf_only_detected": true,
+        "perf_only_delay": 197,
+        "perf_only_fp": 17,
+        "perf_only_tp": 51
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 4100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 9,
+        "true_positives": 9,
+        "total_alerts": 18,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0018446685907233535,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1919157122931836,
+            "std": 0.15280046290034432
+          },
+          "P": {
+            "mean": -0.04451741005242253,
+            "std": 0.0621504596077365
+          }
+        },
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1_score": 0.18181818181818182,
+        "cusum_detected": true,
+        "cusum_delay": 49,
+        "cusum_fp": 0,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 32,
+        "adwin_fp": 7,
+        "adwin_tp": 16,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 210,
+        "perf_only_tp": 296
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 4600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 9,
+        "true_positives": 11,
+        "total_alerts": 20,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0021436644155288878,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.42899386958832303,
+            "std": 0.05506886710758941
+          },
+          "P": {
+            "mean": 0.04431869280074313,
+            "std": 0.5366959169749942
+          }
+        },
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1_score": 0.18181818181818182,
+        "cusum_detected": true,
+        "cusum_delay": 2,
+        "cusum_fp": 1,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 17,
+        "adwin_fp": 4,
+        "adwin_tp": 14,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 22,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 5100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": false,
+        "detection_delay": null,
+        "false_positives": 2,
+        "true_positives": 0,
+        "total_alerts": 2,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00748434412844819,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.6509317559690929,
+            "std": 0.23610316463162204
+          },
+          "P": {
+            "mean": 0.01607497266590599,
+            "std": 0.23097579034905366
+          }
+        },
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": null,
+        "cusum_detected": true,
+        "cusum_delay": 75,
+        "cusum_fp": 5,
+        "cusum_tp": 10,
+        "adwin_detected": true,
+        "adwin_delay": 76,
+        "adwin_fp": 8,
+        "adwin_tp": 15,
+        "perf_only_detected": true,
+        "perf_only_delay": 184,
+        "perf_only_fp": 42,
+        "perf_only_tp": 40
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 5600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 11,
+        "true_positives": 12,
+        "total_alerts": 23,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0031161636439627142,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.7348947855251529,
+            "std": 0.1410355939631703
+          },
+          "P": {
+            "mean": 0.06980134883150484,
+            "std": 0.05851561842659826
+          }
+        },
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.15384615384615385,
+        "cusum_detected": true,
+        "cusum_delay": 51,
+        "cusum_fp": 3,
+        "cusum_tp": 9,
+        "adwin_detected": true,
+        "adwin_delay": 46,
+        "adwin_fp": 7,
+        "adwin_tp": 22,
+        "perf_only_detected": true,
+        "perf_only_delay": 270,
+        "perf_only_fp": 7,
+        "perf_only_tp": 23
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 6100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 7,
+        "true_positives": 9,
+        "total_alerts": 16,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004211894679139024,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.135751671480015,
+            "std": 0.04730283077045382
+          },
+          "P": {
+            "mean": -0.08718835905527257,
+            "std": 0.25853092227069424
+          }
+        },
+        "precision": 0.125,
+        "recall": 1.0,
+        "f1_score": 0.2222222222222222,
+        "cusum_detected": true,
+        "cusum_delay": 115,
+        "cusum_fp": 1,
+        "cusum_tp": 3,
+        "adwin_detected": true,
+        "adwin_delay": 113,
+        "adwin_fp": 2,
+        "adwin_tp": 14,
+        "perf_only_detected": true,
+        "perf_only_delay": 85,
+        "perf_only_fp": 26,
+        "perf_only_tp": 38
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 6600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 13,
+        "true_positives": 9,
+        "total_alerts": 22,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.002725788192662481,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.13005036485760144,
+            "std": 0.07059418427536206
+          },
+          "P": {
+            "mean": -0.13337254325429068,
+            "std": 0.03557005117806327
+          }
+        },
+        "precision": 0.07142857142857142,
+        "recall": 1.0,
+        "f1_score": 0.13333333333333333,
+        "cusum_detected": true,
+        "cusum_delay": 47,
+        "cusum_fp": 12,
+        "cusum_tp": 11,
+        "adwin_detected": true,
+        "adwin_delay": 47,
+        "adwin_fp": 7,
+        "adwin_tp": 15,
+        "perf_only_detected": true,
+        "perf_only_delay": 90,
+        "perf_only_fp": 5,
+        "perf_only_tp": 21
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 7100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 99,
+        "false_positives": 12,
+        "true_positives": 11,
+        "total_alerts": 23,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0017135255977480002,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.5434020351479218,
+            "std": 0.04838943547719803
+          },
+          "P": {
+            "mean": 0.0689730494715005,
+            "std": 0.226878867761815
+          }
+        },
+        "precision": 0.07692307692307693,
+        "recall": 1.0,
+        "f1_score": 0.14285714285714288,
+        "cusum_detected": true,
+        "cusum_delay": 22,
+        "cusum_fp": 18,
+        "cusum_tp": 37,
+        "adwin_detected": true,
+        "adwin_delay": 7,
+        "adwin_fp": 1,
+        "adwin_tp": 14,
+        "perf_only_detected": true,
+        "perf_only_delay": 57,
+        "perf_only_fp": 17,
+        "perf_only_tp": 32
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 7600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 12,
+        "total_alerts": 26,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.006819558968251298,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 1.0182929071268718,
+            "std": 0.027912654555113256
+          },
+          "P": {
+            "mean": -0.044259594617591026,
+            "std": 0.0158331932260389
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 68,
+        "cusum_fp": 1,
+        "cusum_tp": 3,
+        "adwin_detected": true,
+        "adwin_delay": 62,
+        "adwin_fp": 0,
+        "adwin_tp": 11,
+        "perf_only_detected": true,
+        "perf_only_delay": 52,
+        "perf_only_fp": 9,
+        "perf_only_tp": 34
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 8100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 10,
+        "true_positives": 8,
+        "total_alerts": 18,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00339609943706339,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.27932778384845314,
+            "std": 0.16345245718707074
+          },
+          "P": {
+            "mean": -0.013927073793986187,
+            "std": 0.04193829477560846
+          }
+        },
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1_score": 0.16666666666666669,
+        "cusum_detected": true,
+        "cusum_delay": 3,
+        "cusum_fp": 6,
+        "cusum_tp": 9,
+        "adwin_detected": true,
+        "adwin_delay": 35,
+        "adwin_fp": 9,
+        "adwin_tp": 21,
+        "perf_only_detected": true,
+        "perf_only_delay": 66,
+        "perf_only_fp": 107,
+        "perf_only_tp": 83
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 8600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 4,
+        "true_positives": 8,
+        "total_alerts": 12,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0021786368963941775,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.3511463213008261,
+            "std": 0.3449220421944582
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.04193854021272707
+          }
+        },
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1_score": 0.33333333333333337,
+        "cusum_detected": true,
+        "cusum_delay": 213,
+        "cusum_fp": 1,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 22,
+        "adwin_fp": 4,
+        "adwin_tp": 13,
+        "perf_only_detected": true,
+        "perf_only_delay": 389,
+        "perf_only_fp": 1,
+        "perf_only_tp": 7
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 9100,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 13,
+        "true_positives": 11,
+        "total_alerts": 24,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00174907678778938,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.5058248262649561,
+            "std": 0.01824646917439871
+          },
+          "P": {
+            "mean": -0.15201236003805285,
+            "std": 0.42582517224796135
+          }
+        },
+        "precision": 0.07142857142857142,
+        "recall": 1.0,
+        "f1_score": 0.13333333333333333,
+        "cusum_detected": true,
+        "cusum_delay": 40,
+        "cusum_fp": 5,
+        "cusum_tp": 10,
+        "adwin_detected": true,
+        "adwin_delay": 11,
+        "adwin_fp": 7,
+        "adwin_tp": 14,
+        "perf_only_detected": false,
+        "perf_only_delay": null,
+        "perf_only_fp": 5,
+        "perf_only_tp": 0
+      },
+      {
+        "env_name": "kuhnpoker",
+        "seed": 9600,
+        "config": {
+          "env_name": "kuhnpoker",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 6,
+        "true_positives": 9,
+        "total_alerts": 15,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0017923461133248343,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.22880306858531266,
+            "std": 0.04634566653767166
+          },
+          "P": {
+            "mean": -0.09665145495424221,
+            "std": 0.056229988044245185
+          }
+        },
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1_score": 0.25,
+        "cusum_detected": true,
+        "cusum_delay": 320,
+        "cusum_fp": 3,
+        "cusum_tp": 4,
+        "adwin_detected": true,
+        "adwin_delay": 144,
+        "adwin_fp": 5,
+        "adwin_tp": 14,
+        "perf_only_detected": true,
+        "perf_only_delay": 0,
+        "perf_only_fp": 58,
+        "perf_only_tp": 150
+      }
+    ],
+    "summary": {
+      "smf_aas": {
+        "detection_rate": 0.9,
+        "mean_delay": 57.333333333333336,
+        "std_delay": 18.633899812498246,
+        "mean_fp": 8.7,
+        "std_fp": 3.7960505792204615,
+        "precision": 0.09375,
+        "recall": 0.9,
+        "f1_score": 0.169811320754717
+      },
+      "cusum": {
+        "detection_rate": 1.0,
+        "mean_delay": 87.45,
+        "std_delay": 85.74174887416282,
+        "mean_fp": 6.25,
+        "std_fp": 7.196353243136415,
+        "precision": 0.13793103448275862,
+        "recall": 1.0,
+        "f1_score": 0.2424242424242424
+      },
+      "adwin": {
+        "detection_rate": 1.0,
+        "mean_delay": 48.35,
+        "std_delay": 37.85931193246913,
+        "mean_fp": 5.5,
+        "std_fp": 2.8722813232690143,
+        "precision": 0.15384615384615385,
+        "recall": 1.0,
+        "f1_score": 0.2666666666666667
+      },
+      "perf_only": {
+        "detection_rate": 0.9,
+        "mean_delay": 130.55555555555554,
+        "std_delay": 114.60328782476928,
+        "mean_fp": 54.55,
+        "std_fp": 66.75438187864523,
+        "precision": 0.016230838593327322,
+        "recall": 0.9,
+        "f1_score": 0.03188662533215235
+      }
+    }
+  }
+}

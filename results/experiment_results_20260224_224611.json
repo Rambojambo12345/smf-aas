@@ -1,0 +1,1141 @@
+{
+  "tictactoe": {
+    "env_name": "tictactoe",
+    "n_seeds": 20,
+    "seeds": [
+      100,
+      600,
+      1100,
+      1600,
+      2100,
+      2600,
+      3100,
+      3600,
+      4100,
+      4600,
+      5100,
+      5600,
+      6100,
+      6600,
+      7100,
+      7600,
+      8100,
+      8600,
+      9100,
+      9600
+    ],
+    "config": {
+      "n_episodes": 1500,
+      "change_point": 900,
+      "baseline_episodes": 200,
+      "window_size": 50,
+      "training_episodes": 1000,
+      "cusum_threshold": 5.0,
+      "cusum_drift": 0.5
+    },
+    "individual_results": [
+      {
+        "env_name": "tictactoe",
+        "seed": 100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 7,
+        "total_alerts": 21,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00460271662800369,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.05538699379186601,
+            "std": 0.01
+          },
+          "P": {
+            "mean": 0.023701593804380992,
+            "std": 0.036949973977793156
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 21,
+        "cusum_fp": 0,
+        "cusum_tp": 9,
+        "adwin_detected": true,
+        "adwin_delay": 66,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 1,
+        "perf_only_fp": 120,
+        "perf_only_tp": 179
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 1,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0032236852772698295,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.18825556139781982,
+            "std": 0.16541268925716232
+          },
+          "P": {
+            "mean": 0.08808254866047804,
+            "std": 0.24232507743265985
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 15,
+        "cusum_fp": 1,
+        "cusum_tp": 7,
+        "adwin_detected": true,
+        "adwin_delay": 80,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 78,
+        "perf_only_fp": 0,
+        "perf_only_tp": 52
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 1100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 1,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.005253085734301941,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.15082323910831158,
+            "std": 0.12042063090954756
+          },
+          "P": {
+            "mean": 0.052633810627783766,
+            "std": 0.40370812547404655
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 22,
+        "cusum_fp": 0,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 36,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 29,
+        "perf_only_fp": 1,
+        "perf_only_tp": 22
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 1600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 1600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 2,
+        "true_positives": 5,
+        "total_alerts": 7,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004857102742828489,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.2220365299036432,
+            "std": 0.08087514451565789
+          },
+          "P": {
+            "mean": -0.10709982763635355,
+            "std": 0.13393150532472115
+          }
+        },
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.5,
+        "cusum_detected": true,
+        "cusum_delay": 4,
+        "cusum_fp": 7,
+        "cusum_tp": 26,
+        "adwin_detected": true,
+        "adwin_delay": 22,
+        "adwin_fp": 0,
+        "adwin_tp": 4,
+        "perf_only_detected": true,
+        "perf_only_delay": 11,
+        "perf_only_fp": 44,
+        "perf_only_tp": 136
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 2100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 1,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004055535990701121,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.19633409471964092,
+            "std": 0.164376973207064
+          },
+          "P": {
+            "mean": 0.025370813170246267,
+            "std": 0.32197236031665705
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 8,
+        "cusum_fp": 8,
+        "cusum_tp": 20,
+        "adwin_detected": true,
+        "adwin_delay": 69,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 23,
+        "perf_only_fp": 2,
+        "perf_only_tp": 2
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 2600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 2600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 1,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.00424834372686032,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.20097669569763107,
+            "std": 0.1048113330349485
+          },
+          "P": {
+            "mean": -0.02222222222222224,
+            "std": 0.39675163661134255
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 10,
+        "cusum_fp": 8,
+        "cusum_tp": 20,
+        "adwin_detected": true,
+        "adwin_delay": 52,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 4,
+        "perf_only_fp": 30,
+        "perf_only_tp": 94
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 3100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 5,
+        "true_positives": 7,
+        "total_alerts": 12,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004498311165863789,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.12974428940452878,
+            "std": 0.08339751979923318
+          },
+          "P": {
+            "mean": -0.05254106375285615,
+            "std": 0.06572059424061806
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": true,
+        "cusum_delay": 10,
+        "cusum_fp": 3,
+        "cusum_tp": 17,
+        "adwin_detected": true,
+        "adwin_delay": 92,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 24,
+        "perf_only_fp": 144,
+        "perf_only_tp": 179
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 3600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 3600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 9,
+        "total_alerts": 23,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0065755064820986475,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1712343556280837,
+            "std": 0.01
+          },
+          "P": {
+            "mean": -0.02363395213162474,
+            "std": 0.26233496567123393
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 3,
+        "cusum_fp": 7,
+        "cusum_tp": 20,
+        "adwin_detected": true,
+        "adwin_delay": 40,
+        "adwin_fp": 0,
+        "adwin_tp": 1,
+        "perf_only_detected": true,
+        "perf_only_delay": 31,
+        "perf_only_fp": 0,
+        "perf_only_tp": 23
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 4100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 14,
+        "true_positives": 12,
+        "total_alerts": 26,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.005215507301362044,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.20225542709941302,
+            "std": 0.03674150761415659
+          },
+          "P": {
+            "mean": 0.15260120809767957,
+            "std": 0.01
+          }
+        },
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1_score": 0.125,
+        "cusum_detected": true,
+        "cusum_delay": 5,
+        "cusum_fp": 0,
+        "cusum_tp": 4,
+        "adwin_detected": true,
+        "adwin_delay": 117,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 37,
+        "perf_only_fp": 116,
+        "perf_only_tp": 143
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 4600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 4600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 5,
+        "true_positives": 3,
+        "total_alerts": 8,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.006530397575879073,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1493889662774741,
+            "std": 0.09234253540261005
+          },
+          "P": {
+            "mean": -0.0979296383495736,
+            "std": 0.1189818818192859
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": true,
+        "cusum_delay": 29,
+        "cusum_fp": 0,
+        "cusum_tp": 3,
+        "adwin_detected": true,
+        "adwin_delay": 62,
+        "adwin_fp": 0,
+        "adwin_tp": 1,
+        "perf_only_detected": true,
+        "perf_only_delay": 26,
+        "perf_only_fp": 126,
+        "perf_only_tp": 90
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 5100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 3,
+        "true_positives": 2,
+        "total_alerts": 5,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.005138087644272096,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1527891348836351,
+            "std": 0.06846368909712844
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.17764536949896623
+          }
+        },
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "cusum_detected": true,
+        "cusum_delay": 9,
+        "cusum_fp": 1,
+        "cusum_tp": 6,
+        "adwin_detected": true,
+        "adwin_delay": 59,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 26,
+        "perf_only_fp": 111,
+        "perf_only_tp": 146
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 5600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 5600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 12,
+        "true_positives": 12,
+        "total_alerts": 24,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004741995884827349,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.23349075397676528,
+            "std": 0.1063332194432504
+          },
+          "P": {
+            "mean": -0.1700558740564822,
+            "std": 0.01932385625958871
+          }
+        },
+        "precision": 0.07692307692307693,
+        "recall": 1.0,
+        "f1_score": 0.14285714285714288,
+        "cusum_detected": true,
+        "cusum_delay": 32,
+        "cusum_fp": 1,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 64,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 13,
+        "perf_only_fp": 152,
+        "perf_only_tp": 59
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 6100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 7,
+        "true_positives": 10,
+        "total_alerts": 17,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.005103975223346388,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.13693376023138593,
+            "std": 0.03258340036710573
+          },
+          "P": {
+            "mean": -0.09412097036339402,
+            "std": 0.09800689621065115
+          }
+        },
+        "precision": 0.125,
+        "recall": 1.0,
+        "f1_score": 0.2222222222222222,
+        "cusum_detected": true,
+        "cusum_delay": 26,
+        "cusum_fp": 1,
+        "cusum_tp": 11,
+        "adwin_detected": true,
+        "adwin_delay": 166,
+        "adwin_fp": 0,
+        "adwin_tp": 1,
+        "perf_only_detected": true,
+        "perf_only_delay": 35,
+        "perf_only_fp": 24,
+        "perf_only_tp": 77
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 6600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 6600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 1,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004226438294896939,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.23349704858826145,
+            "std": 0.08968410931916873
+          },
+          "P": {
+            "mean": 0.19768126269309824,
+            "std": 0.3137635836000812
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 17,
+        "cusum_fp": 1,
+        "cusum_tp": 8,
+        "adwin_detected": true,
+        "adwin_delay": 53,
+        "adwin_fp": 0,
+        "adwin_tp": 1,
+        "perf_only_detected": true,
+        "perf_only_delay": 23,
+        "perf_only_fp": 36,
+        "perf_only_tp": 37
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 7100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 10,
+        "true_positives": 8,
+        "total_alerts": 18,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.005578654426098381,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.05721904341415281,
+            "std": 0.040057435210612356
+          },
+          "P": {
+            "mean": 0.023880217038044587,
+            "std": 0.032151518016454474
+          }
+        },
+        "precision": 0.09090909090909091,
+        "recall": 1.0,
+        "f1_score": 0.16666666666666669,
+        "cusum_detected": true,
+        "cusum_delay": 19,
+        "cusum_fp": 1,
+        "cusum_tp": 10,
+        "adwin_detected": true,
+        "adwin_delay": 74,
+        "adwin_fp": 0,
+        "adwin_tp": 1,
+        "perf_only_detected": true,
+        "perf_only_delay": 19,
+        "perf_only_fp": 172,
+        "perf_only_tp": 219
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 7600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 7600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 12,
+        "true_positives": 10,
+        "total_alerts": 22,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.006700319013552148,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.20867563488263557,
+            "std": 0.01
+          },
+          "P": {
+            "mean": -0.05372706895173343,
+            "std": 0.13609423817948046
+          }
+        },
+        "precision": 0.07692307692307693,
+        "recall": 1.0,
+        "f1_score": 0.14285714285714288,
+        "cusum_detected": true,
+        "cusum_delay": 16,
+        "cusum_fp": 7,
+        "cusum_tp": 15,
+        "adwin_detected": true,
+        "adwin_delay": 56,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 18,
+        "perf_only_fp": 13,
+        "perf_only_tp": 61
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 8100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 0,
+        "true_positives": 1,
+        "total_alerts": 1,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.006381318960456076,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.20206952344504342,
+            "std": 0.20363807179995172
+          },
+          "P": {
+            "mean": 0.05343277934218049,
+            "std": 0.45305900972688906
+          }
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "cusum_detected": true,
+        "cusum_delay": 4,
+        "cusum_fp": 0,
+        "cusum_tp": 5,
+        "adwin_detected": true,
+        "adwin_delay": 127,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 8,
+        "perf_only_fp": 20,
+        "perf_only_tp": 81
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 8600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 8600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 5,
+        "true_positives": 4,
+        "total_alerts": 9,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.0042030396224527165,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.058036216322979985,
+            "std": 0.048689594915800306
+          },
+          "P": {
+            "mean": 0.0,
+            "std": 0.15073157410980284
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": true,
+        "cusum_delay": 4,
+        "cusum_fp": 3,
+        "cusum_tp": 15,
+        "adwin_detected": true,
+        "adwin_delay": 55,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 28,
+        "perf_only_fp": 109,
+        "perf_only_tp": 118
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 9100,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9100,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 2,
+        "true_positives": 1,
+        "total_alerts": 3,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004876613220192956,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1478577800645671,
+            "std": 0.15327753443651077
+          },
+          "P": {
+            "mean": 0.17669044171975445,
+            "std": 0.1936961735773338
+          }
+        },
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1_score": 0.5,
+        "cusum_detected": true,
+        "cusum_delay": 13,
+        "cusum_fp": 1,
+        "cusum_tp": 4,
+        "adwin_detected": true,
+        "adwin_delay": 25,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 37,
+        "perf_only_fp": 0,
+        "perf_only_tp": 22
+      },
+      {
+        "env_name": "tictactoe",
+        "seed": 9600,
+        "config": {
+          "env_name": "tictactoe",
+          "n_episodes": 1500,
+          "change_point": 900,
+          "baseline_episodes": 200,
+          "window_size": 50,
+          "training_episodes": 1000,
+          "seed": 9600,
+          "cusum_threshold": 5.0,
+          "cusum_drift": 0.5,
+          "cusum_warmup": 50,
+          "yellow_threshold": 2.0,
+          "red_threshold": 3.0,
+          "use_log_cds": false
+        },
+        "detected": true,
+        "detection_delay": 49,
+        "false_positives": 5,
+        "true_positives": 9,
+        "total_alerts": 14,
+        "baseline_stats": {
+          "S": {
+            "mean": 0.004717667484908562,
+            "std": 0.01
+          },
+          "B": {
+            "mean": 0.1649334208591294,
+            "std": 0.08023173549332442
+          },
+          "P": {
+            "mean": 0.02217756561397367,
+            "std": 0.06458902598824692
+          }
+        },
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.2857142857142857,
+        "cusum_detected": true,
+        "cusum_delay": 8,
+        "cusum_fp": 5,
+        "cusum_tp": 3,
+        "adwin_detected": true,
+        "adwin_delay": 83,
+        "adwin_fp": 0,
+        "adwin_tp": 2,
+        "perf_only_detected": true,
+        "perf_only_delay": 22,
+        "perf_only_fp": 76,
+        "perf_only_tp": 130
+      }
+    ],
+    "summary": {
+      "smf_aas": {
+        "detection_rate": 1.0,
+        "mean_delay": 49.0,
+        "std_delay": 0.0,
+        "mean_fp": 5.5,
+        "std_fp": 5.181698563212646,
+        "precision": 0.15384615384615385,
+        "recall": 1.0,
+        "f1_score": 0.2666666666666667
+      },
+      "cusum": {
+        "detection_rate": 1.0,
+        "mean_delay": 13.75,
+        "std_delay": 8.589965075598387,
+        "mean_fp": 2.75,
+        "std_fp": 2.947456530637899,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1_score": 0.4210526315789474
+      },
+      "adwin": {
+        "detection_rate": 1.0,
+        "mean_delay": 69.9,
+        "std_delay": 33.98514381314283,
+        "mean_fp": 0.0,
+        "std_fp": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+      },
+      "perf_only": {
+        "detection_rate": 1.0,
+        "mean_delay": 24.65,
+        "std_delay": 15.82174137065829,
+        "mean_fp": 64.8,
+        "std_fp": 58.49581181588986,
+        "precision": 0.015197568389057751,
+        "recall": 1.0,
+        "f1_score": 0.029940119760479042
+      }
+    }
+  }
+}
