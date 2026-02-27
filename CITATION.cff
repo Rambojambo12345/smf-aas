@@ -27,7 +27,7 @@ preferred-citation:
     - family-names: "Kleibrink"
       given-names: "B."
   title: "SMF-AAS: A Multi-Component Framework for Post-Deployment Monitoring of Adaptive AI Systems"
-  journal: "Expert Systems with Applications"
+  journal: 
   year: 2026
   publisher:
-    name: "Elsevier"
+    name: 
