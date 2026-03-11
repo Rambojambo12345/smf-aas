@@ -1,7 +1,5 @@
 # SMF-AAS: Strategy Monitoring Framework for Autonomous Agent Systems
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A framework for detecting strategy changes in autonomous agents through multi-component behavioral analysis. SMF-AAS monitors state distributions, behavioral patterns, and performance metrics to identify when an agent's strategy has shifted.
 
