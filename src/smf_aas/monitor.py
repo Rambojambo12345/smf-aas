@@ -13,24 +13,6 @@ The Composite Drift Score (CDS) aggregates these components:
 
 where z_X = (X - μ_baseline) / σ_baseline
 
-References
-----------
-.. [1] Lin, J. (1991). Divergence measures based on the Shannon entropy.
-       IEEE Transactions on Information Theory, 37(1), 145-151.
-.. [2] Cohen, J. (1988). Statistical power analysis for the behavioral sciences.
-       Lawrence Erlbaum Associates.
-
-Example
--------
->>> from smf_aas import StrategyMonitor, MonitorConfig
->>> config = MonitorConfig(window_size=50, baseline_episodes=200)
->>> monitor = StrategyMonitor(config, n_actions=9)
->>> 
->>> for episode in range(1500):
-...     states, actions, rewards, ret = run_episode(env, agent)
-...     alert = monitor.update(states, actions, rewards, ret)
-...     if alert:
-...         print(f"Alert at episode {episode}: {alert.level.value}")
 """
 
 from __future__ import annotations
