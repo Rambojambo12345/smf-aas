@@ -4,12 +4,12 @@ Baseline drift detection methods for comparison.
 This module implements established changepoint/drift detection algorithms
 to compare against the SMF-AAS framework:
 
-1. CUSUM (Cumulative Sum) - Page (1954)
-2. Page-Hinkley Test - Page (1954)
-3. ADWIN (Adaptive Windowing) - Bifet & Gavaldà (2007)
-4. DDM (Drift Detection Method) - Gama et al. (2004)
-5. EDDM (Early Drift Detection Method) - Baena-García et al. (2006)
-6. KSWIN (Kolmogorov-Smirnov Windowing) - Raab et al. (2020)
+1. CUSUM (Cumulative Sum) 
+2. Page-Hinkley Test 
+3. ADWIN (Adaptive Windowing) 
+4. DDM (Drift Detection Method) 
+5. EDDM (Early Drift Detection Method) 
+6. KSWIN (Kolmogorov-Smirnov Windowing) 
 7. Performance-Only baseline
 
 """
