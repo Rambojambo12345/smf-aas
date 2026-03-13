@@ -8,13 +8,6 @@ The implementation uses Jensen-Shannon divergence computed per-dimension
 and averaged, which is more robust than joint-state hashing for continuous
 or high-dimensional state spaces.
 
-References
-----------
-.. [1] Lin, J. (1991). Divergence measures based on the Shannon entropy.
-       IEEE Transactions on Information Theory, 37(1), 145-151.
-.. [2] Endres, D. M., & Schindelin, J. E. (2003). A new metric for probability
-       distributions. IEEE Transactions on Information Theory, 49(7), 1858-1860.
-
 Notes
 -----
 Jensen-Shannon divergence is a symmetric, bounded (0 to ln(2)) divergence
@@ -37,34 +30,7 @@ class StateDistributionShift:
     This detector computes per-dimension histograms using shared bins between
     consecutive windows and averages the Jensen-Shannon divergence across all
     dimensions. This approach is more robust than joint-state hashing for
-    high-cardinality or continuous state spaces.
-    
-    Parameters
-    ----------
-    window_size : int, default=50
-        Number of episodes per comparison window.
-    n_bins : int, default=20
-        Number of histogram bins per dimension.
-    smoothing : float, default=1e-10
-        Laplace smoothing to prevent log(0).
-    
-    Attributes
-    ----------
-    window_size : int
-        Episodes per window.
-    episode_count : int
-        Total episodes processed.
-    history : List[float]
-        History of JS divergence values.
-    
-    Examples
-    --------
-    >>> detector = StateDistributionShift(window_size=50)
-    >>> for episode in range(100):
-    ...     states = collect_episode_states(env)
-    ...     js_div = detector.add_episode(states)
-    ...     if js_div is not None:
-    ...         print(f"JS divergence: {js_div:.4f}")
+   continuous state spaces.
     
     Notes
     -----
@@ -89,18 +55,7 @@ class StateDistributionShift:
     
     def add_episode(self, states: List[Any]) -> Optional[float]:
         """Add episode states and compute divergence if window complete.
-        
-        Parameters
-        ----------
-        states : List[Any]
-            Sequence of states from the episode. Each state should be
-            array-like and will be converted to a flat numpy array.
-        
-        Returns
-        -------
-        Optional[float]
-            Jensen-Shannon divergence between current and previous windows,
-            or None if not enough data yet.
+       
         """
         self.episode_count += 1
         
@@ -135,17 +90,6 @@ class StateDistributionShift:
     ) -> float:
         """Compute average JS divergence across state dimensions.
         
-        Parameters
-        ----------
-        current : List[List[np.ndarray]]
-            Current window episodes, each containing list of state arrays.
-        previous : List[List[np.ndarray]]
-            Previous window episodes.
-        
-        Returns
-        -------
-        float
-            Average Jensen-Shannon divergence across dimensions.
         """
         # Flatten all states into arrays
         curr_flat = self._flatten_window(current)
@@ -230,10 +174,6 @@ class StateDistributionShift:
     def get_history(self) -> List[float]:
         """Get history of divergence values.
         
-        Returns
-        -------
-        List[float]
-            Copy of the divergence history.
         """
         return self.history.copy()
     
