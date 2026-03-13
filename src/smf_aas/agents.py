@@ -24,31 +24,6 @@ class TabularQLearning:
     Uses state hashing for tabular representation, suitable for
     discrete or discretized state spaces.
     
-    Parameters
-    ----------
-    n_actions : int
-        Number of possible actions.
-    learning_rate : float, default=0.1
-        Q-value learning rate (α).
-    discount : float, default=0.99
-        Discount factor (γ).
-    epsilon : float, default=0.1
-        Exploration rate for ε-greedy.
-    seed : int, optional
-        Random seed for reproducibility.
-    
-    Attributes
-    ----------
-    q_table : Dict
-        Q-values indexed by (state_hash, action).
-    n_actions : int
-        Number of actions.
-    
-    Examples
-    --------
-    >>> agent = TabularQLearning(n_actions=9, epsilon=0.1)
-    >>> action = agent.get_action(observation, legal_actions)
-    >>> agent.update(reward, next_obs, next_legal, done)
     """
     
     def __init__(
@@ -83,17 +58,6 @@ class TabularQLearning:
     ) -> int:
         """Select action using ε-greedy policy.
         
-        Parameters
-        ----------
-        observation : np.ndarray
-            Current state observation.
-        legal_actions : List[int]
-            List of legal action indices.
-        
-        Returns
-        -------
-        int
-            Selected action index.
         """
         if not legal_actions:
             raise ValueError("No legal actions available")
@@ -166,13 +130,6 @@ class TabularQLearning:
 
 class RandomAgent:
     """Uniform random policy baseline.
-    
-    Parameters
-    ----------
-    n_actions : int, optional
-        Number of actions (unused, for API compatibility).
-    seed : int, optional
-        Random seed.
     """
     
     def __init__(self, n_actions: int = None, seed: Optional[int] = None) -> None:
