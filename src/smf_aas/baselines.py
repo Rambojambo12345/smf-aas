@@ -11,16 +11,7 @@ from scipy import stats
 class DetectionResult:
     """Result from a detection method.
     
-    Attributes
-    ----------
-    detected : bool
-        Whether a change was detected.
-    location : Optional[int]
-        Index where change was detected.
-    score : float
-        Detection statistic value.
-    method : str
-        Name of detection method.
+
     """
     detected: bool
     location: Optional[int]
@@ -96,14 +87,6 @@ class PageHinkley:
     Similar to CUSUM but uses cumulative sum of differences
     from running mean.
     
-    Parameters
-    ----------
-    threshold : float, default=50.0
-        Detection threshold (λ).
-    alpha : float, default=0.005
-        Forgetting factor.
-    min_instances : int, default=50
-        Minimum observations before detection.
     """
     
     def __init__(
@@ -168,11 +151,7 @@ class ADWIN:
     Maintains a variable-length window of recent data and detects
     change by comparing sub-windows using statistical bounds.
     
-    Parameters
-    ----------
-    delta : float, default=0.002
-        Confidence parameter (smaller = more sensitive).
-    """
+     """
     
     def __init__(self, delta: float = 0.002) -> None:
         self.delta = delta
