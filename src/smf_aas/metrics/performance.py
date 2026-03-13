@@ -9,13 +9,6 @@ Cohen's d measures the standardized difference between two means:
 
 where S_pooled is the pooled standard deviation.
 
-References
-----------
-.. [1] Cohen, J. (1988). Statistical power analysis for the behavioral sciences
-       (2nd ed.). Lawrence Erlbaum Associates.
-.. [2] Sawilowsky, S. S. (2009). New effect size rules of thumb.
-       Journal of Modern Applied Statistical Methods, 8(2), 597-599.
-
 Notes
 -----
 Cohen's d interpretation guidelines:
@@ -37,31 +30,6 @@ class PerformanceMonitor:
     This monitor computes Cohen's d between consecutive windows of episode
     returns, providing a standardized measure of performance change that
     accounts for natural variance.
-    
-    Parameters
-    ----------
-    window_size : int, default=50
-        Number of episodes per comparison window.
-    
-    Attributes
-    ----------
-    window_size : int
-        Episodes per window.
-    episode_count : int
-        Total episodes processed.
-    history : List[float]
-        History of Cohen's d values.
-    returns : List[float]
-        All episode returns (for diagnostics).
-    
-    Examples
-    --------
-    >>> monitor = PerformanceMonitor(window_size=50)
-    >>> for episode in range(100):
-    ...     episode_return = run_episode(env, agent)
-    ...     cohens_d = monitor.add_episode(episode_return)
-    ...     if cohens_d is not None:
-    ...         print(f"Cohen's d: {cohens_d:.4f}")
     """
     
     def __init__(self, window_size: int = 50) -> None:
@@ -77,16 +45,6 @@ class PerformanceMonitor:
     def add_episode(self, episode_return: float) -> Optional[float]:
         """Add episode return and compute effect size if window complete.
         
-        Parameters
-        ----------
-        episode_return : float
-            Total return from the episode.
-        
-        Returns
-        -------
-        Optional[float]
-            Cohen's d between current and previous windows,
-            or None if not enough data.
         """
         self.episode_count += 1
         self.returns.append(episode_return)
@@ -118,17 +76,6 @@ class PerformanceMonitor:
         
         Uses pooled standard deviation for the denominator.
         
-        Parameters
-        ----------
-        group1 : List[float]
-            First group of values (current window).
-        group2 : List[float]
-            Second group of values (previous window).
-        
-        Returns
-        -------
-        float
-            Cohen's d effect size. Positive if group1 > group2.
         """
         arr1 = np.array(group1, dtype=np.float64)
         arr2 = np.array(group2, dtype=np.float64)
