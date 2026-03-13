@@ -7,8 +7,6 @@ This module provides the three core detection components:
 - :class:`BehaviorShiftDetector`: Detects changes in behavioral features
 - :class:`PerformanceMonitor`: Detects changes in episode performance
 
-Each component operates on sliding or fixed windows and outputs a scalar
-metric that can be z-score normalized against a baseline.
 """
 
 from .state_shift import StateDistributionShift
