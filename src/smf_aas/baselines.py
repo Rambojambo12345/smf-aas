@@ -1,18 +1,3 @@
-"""
-Baseline drift detection methods for comparison.
-
-This module implements established changepoint/drift detection algorithms
-to compare against the SMF-AAS framework:
-
-1. CUSUM (Cumulative Sum) 
-2. Page-Hinkley Test 
-3. ADWIN (Adaptive Windowing) 
-4. DDM (Drift Detection Method) 
-5. EDDM (Early Drift Detection Method) 
-6. KSWIN (Kolmogorov-Smirnov Windowing) 
-7. Performance-Only baseline
-
-"""
 
 from __future__ import annotations
 
@@ -44,27 +29,7 @@ class DetectionResult:
 
 
 class CUSUM:
-    """Cumulative Sum (CUSUM) change detection.
-    
-    Detects shifts in the mean of a sequence by accumulating
-    deviations from a target value. Implements two-sided CUSUM
-    that detects both increases and decreases.
-    
-    Parameters
-    ----------
-    threshold : float, default=5.0
-        Detection threshold (h).
-    drift : float, default=0.5
-        Allowable drift/slack (k), typically 0.5 * expected_shift.
-    warmup : int, default=50
-        Episodes before detection starts (for estimating baseline).
-    
-    References
-    ----------
-    .. [1] Page, E. S. (1954). Continuous inspection schemes.
-           Biometrika, 41(1/2), 100-115.
-    """
-    
+      
     def __init__(
         self,
         threshold: float = 5.0,
@@ -270,32 +235,7 @@ class ADWIN:
 
 
 class DDM:
-    """Drift Detection Method (DDM).
-    
-    Monitors the error rate and its standard deviation. Detects drift
-    when the error rate significantly increases beyond a threshold.
-    
-    Parameters
-    ----------
-    warning_level : float, default=2.0
-        Number of standard deviations for warning.
-    drift_level : float, default=3.0
-        Number of standard deviations for drift detection.
-    min_instances : int, default=30
-        Minimum observations before detection.
-    
-    References
-    ----------
-    .. [1] Gama, J., Medas, P., Castillo, G., & Rodrigues, P. (2004). 
-           Learning with drift detection. In SBIA (pp. 286-295).
-    
-    Notes
-    -----
-    DDM was originally designed for classification error. Here we adapt it
-    for continuous values by treating values below the running mean as 
-    "errors" (performance drops).
-    """
-    
+       
     def __init__(
         self,
         warning_level: float = 2.0,
@@ -374,26 +314,7 @@ class DDM:
 
 
 class EDDM:
-    """Early Drift Detection Method (EDDM).
-    
-    Extension of DDM that monitors the distance between classification
-    errors rather than just the error rate. More sensitive to gradual drift.
-    
-    Parameters
-    ----------
-    warning_level : float, default=0.95
-        Threshold ratio for warning level.
-    drift_level : float, default=0.90
-        Threshold ratio for drift detection.
-    min_instances : int, default=30
-        Minimum observations before detection.
-    
-    References
-    ----------
-    .. [1] Baena-García, M., et al. (2006). Early drift detection method.
-           In ECML PKDD Workshop on Knowledge Discovery from Data Streams.
-    """
-    
+      
     def __init__(
         self,
         warning_level: float = 0.95,
@@ -496,27 +417,7 @@ class EDDM:
 
 
 class KSWIN:
-    """Kolmogorov-Smirnov Windowing (KSWIN) for drift detection.
-    
-    Uses the Kolmogorov-Smirnov test to compare distributions in
-    a reference window and a sliding window.
-    
-    Parameters
-    ----------
-    alpha : float, default=0.005
-        Significance level for the KS test.
-    window_size : int, default=100
-        Size of the sliding window.
-    stat_size : int, default=30
-        Size of the reference (stationary) window.
-    
-    References
-    ----------
-    .. [1] Raab, C., Heusinger, M., & Schleif, F. M. (2020). Reactive soft 
-           prototype computing for concept drift streams. Neurocomputing.
-    """
-    
-    def __init__(
+       def __init__(
         self,
         alpha: float = 0.005,
         window_size: int = 100,
@@ -572,17 +473,7 @@ class KSWIN:
 
 
 class PerformanceOnly:
-    """Simple baseline: only monitors performance using effect size.
-    
-    Parameters
-    ----------
-    window_size : int, default=50
-        Window size for comparison.
-    baseline_episodes : int, default=200
-        Episodes for baseline estimation.
-    threshold : float, default=2.5
-        Z-score threshold for detection.
-    """
+
     
     def __init__(
         self,
