@@ -31,19 +31,6 @@ from collections import Counter
 @dataclass(frozen=True)
 class BehaviorFeatures:
     """Immutable container for behavioral feature vector.
-    
-    Attributes
-    ----------
-    action_entropy : float
-        Normalized entropy of action distribution (0 to 1).
-    episode_length : float
-        Mean number of actions per episode.
-    state_revisitation : float
-        Fraction of states that are revisits (0 to 1).
-    action_persistence : float
-        Fraction of consecutive same-action pairs (0 to 1).
-    return_variance : float
-        Variance of episode returns.
     """
     action_entropy: float
     episode_length: float
@@ -77,15 +64,7 @@ class BehaviorFeatures:
 class EpisodeData:
     """Container for single episode trajectory data.
     
-    Parameters
-    ----------
-    states : List[Any]
-        Sequence of states visited.
-    actions : List[int]
-        Sequence of actions taken.
-    rewards : List[float]
-        Sequence of rewards received.
-    """
+       """
     states: List[Any]
     actions: List[int]
     rewards: List[float]
@@ -102,35 +81,6 @@ class BehaviorShiftDetector:
     This detector extracts a multi-dimensional behavioral feature vector
     from each window of episodes and computes the Euclidean distance between
     consecutive windows in normalized feature space.
-    
-    Parameters
-    ----------
-    window_size : int, default=50
-        Number of episodes per comparison window.
-    n_actions : int, default=9
-        Number of possible actions (for entropy normalization).
-    
-    Attributes
-    ----------
-    window_size : int
-        Episodes per window.
-    n_actions : int
-        Number of possible actions.
-    episode_count : int
-        Total episodes processed.
-    history : List[float]
-        History of feature-space distances.
-    feature_history : List[BehaviorFeatures]
-        History of computed feature vectors.
-    
-    Examples
-    --------
-    >>> detector = BehaviorShiftDetector(window_size=50, n_actions=9)
-    >>> for episode in range(100):
-    ...     states, actions, rewards = collect_episode(env)
-    ...     distance = detector.add_episode(states, actions, rewards)
-    ...     if distance is not None:
-    ...         print(f"Behavioral distance: {distance:.4f}")
     """
     
     def __init__(self, window_size: int = 50, n_actions: int = 9) -> None:
@@ -153,19 +103,6 @@ class BehaviorShiftDetector:
     ) -> Optional[float]:
         """Add episode data and compute distance if window complete.
         
-        Parameters
-        ----------
-        states : List[Any]
-            Sequence of states visited.
-        actions : List[int]
-            Sequence of actions taken.
-        rewards : List[float]
-            Sequence of rewards received.
-        
-        Returns
-        -------
-        Optional[float]
-            Feature-space distance between windows, or None if not ready.
         """
         self.episode_count += 1
         
